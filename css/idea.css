@@ -1,0 +1,56 @@
+/* Estilos Hero inicio */
+
+/* Estilos para la sección Hero */
+.hero__imagen {
+  /* Agrega la imagen de fondo con una gradiente por encima para que se oscurezca un poco la foto */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/idea.jpg");
+}
+/* Estilos Hero Fin */
+
+/* Estilos del contenedor del las secciones */
+.section__contenedor {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: auto;
+  text-align: justify;
+}
+
+/* Estilos del contenedor del las secciones */
+.section__generador {
+  margin-bottom: 45px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-middle;
+}
+
+/* Estilo base para el botón de generar */
+.section__boton {
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilos para el boton de generar */
+.section__boton--generar {
+  background-color: #4caf50;
+}
+
+/* Estilo hover para el botone */
+.section__boton--generar:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para el texto de las ideas generadas al azar */
+.section__generador--texto {
+  border-bottom: 1px dashed black;
+  margin-right: 5px;
+  display: inline-block;
+  width: 300px;
+  text-align: center;
+}

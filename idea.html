@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Estilos base -->
+    <link rel="stylesheet" href="css/base.css" />
+    <!-- Estilos idea -->
+    <link rel="stylesheet" href="css/idea.css" />
+    <!-- normalize.css -->
+    <link
+      href="https://unpkg.com/@csstools/normalize.css/evergreen.css"
+      rel="stylesheet"
+    />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    />
+
+    <title>Patagonic</title>
+  </head>
+
+  <body>
+    <!-- Inicio Navbar -->
+    <header class="navbar">
+      <a href="index.html" class="navbar__logo">Patagonic</a>
+      <input
+        class="navbar__hamburger-btn"
+        type="checkbox"
+        id="navbar__hamburger-btn"
+      />
+      <label class="navbar__icono-desplegable" for="navbar__hamburger-btn"
+        ><span class="navbar__navicon"></span
+      ></label>
+      <ul class="navbar__menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+        <li>
+          <a href="idea.html" class="navbar__link--activo"
+            >Generador de ideas</a
+          >
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </header>
+    <!-- Fin Navbar -->
+
+    <!-- Inicio Secciones Main -->
+    <main>
+      <!-- Inicio Hero -->
+      <section>
+        <div class="hero__imagen hero">
+          <div class="hero__texto">
+            <h1>¿Todavía no tenes una idea?</h1>
+            <p>Nosotros te podemos ayudar</p>
+          </div>
+        </div>
+      </section>
+      <!-- Fin Hero -->
+
+      <!-- Inicio sección generador ideas -->
+      <section class="section">
+        <h3 class="section__titulos">Genera tu próxima idea</h3>
+        <hr />
+        <div class="section__contenedor">
+          <p>
+            El peor enemigo del emprendimiento, es la falta de ideas. Por eso
+            ponemos a tu disposición nuestro Generador de ideas, que esperamos
+            te ayude a describir ese negocio millonario que tanto buscas.
+          </p>
+
+          <div class="section__generador">
+            <p class="section__generador--texto" id="texto-generador">
+              Empresa de alquileres de cámaras
+            </p>
+            <button class="section__boton section__boton--generar">
+              Generar
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Fin sección generador ideas -->
+    </main>
+    <!-- Fin Secciones Main -->
+
+    <!-- Inicio footer -->
+    <footer class="footer">
+      <div class="footer__derecha">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <p>&copy; 2021 - Desarrollada por Damián Cabrio</p>
+      </div>
+      <div class="footer__izquierda">
+        <p>Suscribite a nuesta newsletter</p>
+        <form action="#">
+          <input type="text" class="footer__news-letter-input" />
+          <button class="footer__button-news-letter">Enviar</button>
+        </form>
+      </div>
+    </footer>
+    <!-- Fin footer -->
+  </body>
+</html>
