@@ -1,0 +1,32 @@
+/* Estilos Hero inicio */
+
+/* Estilos para la sección Hero */
+.imagen-hero {
+  /* Agrega la imagen de fondo con una gradiente por encima para que se oscurezca un poco la foto */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/bg-hero.jpg");
+}
+
+/* Contenedor flex para las secciones, permiten que sean responsive */
+.contenedor-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Estilos para todos los divs hijos de contenedor-flex  */
+.contenedor-flex > div {
+  width: 500px;
+  margin: 15px;
+  text-align: justify;
+  font-size: 1em;
+  margin-bottom: 100px;
+}
+
+/* Alinea las imágenes de las secciones al centro */
+.alinear-img-centro {
+  margin: auto;
+  display: block;
+}
+
+/* Estilos secciones fin */
