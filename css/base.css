@@ -195,8 +195,8 @@ a {
 
 /* Fin Icono del menu desplegable */
 
-/* Cuando el ancho disponible es menor a 48em, cambia el estilo del navbar, para mostrarse verticalmente */
-@media (min-width: 48em) {
+/* Cuando el ancho disponible es menor a 55em, cambia el estilo del navbar, para mostrarse verticalmente */
+@media (min-width: 55em) {
   .navbar li {
     float: left;
   }
