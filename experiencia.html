@@ -20,19 +20,17 @@
 
 <body>
     <!-- Inicio Navbar -->
-    <navbar>
-        <nav class="navbar">
-            <a href="index.html" class="logo">Patagonic</a>
-            <input class="hamburger-btn" type="checkbox" id="hamburger-btn" />
-            <label class="icono-menu" for="hamburger-btn"><span class="navicon"></span></label>
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="experiencia.html" class="navlink-activo">Experiencia</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </navbar>
+    <header class="navbar">
+        <a href="index.html" class="navbar__logo">Patagonic</a>
+        <input class="hamburger-btn" type="checkbox" id="hamburger-btn" />
+        <label class="navbar_icono-desplegable" for="hamburger-btn"><span class="navicon"></span></label>
+        <ul class="navbar__menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="experiencia.html" class="navbar__link--activo">Experiencia</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </header>
     <!-- Fin Navbar -->
 
     <!-- Inicio Secciones Main -->
@@ -40,9 +38,9 @@
         <!-- Inicio Hero -->
         <section>
             <div class="imagen-hero hero">
-                <div class="texto-hero">
-                    <h1>Hemos trabajado mucho</h1>
-                    <p>Vos podes ser el siguiente</p>
+                <div class="hero__texto">
+                    <h1 class="hero__texto--h1">Enterate de lo ultimo</h1>
+                    <p class="hero__texto--p">Adelantate a los demás</p>
                 </div>
             </div>
         </section>
@@ -50,7 +48,7 @@
 
         <!-- Inicio Nuestra experiencia -->
         <section id="experiencia">
-            <h3 class="titulos">Nuestra experiencia</h3>
+            <h3 class="section__titulos">Nuestra experiencia</h3>
             <hr>
             <table class="tabla-responsive">
                 <thead>
@@ -122,7 +120,7 @@
 
         <!-- Inicio Nuestro equipo -->
         <section id="equipo">
-            <h3 class="titulos">Nuestra experiencia</h3>
+            <h3 class="section__titulos">Nuestra experiencia</h3>
             <hr>
             <div class="contenedor">
                 <ol>
@@ -138,18 +136,18 @@
     <!-- Fin Secciones Main -->
 
     <!-- Inicio footer -->
-    <footer class="footer-distribuido">
-        <div class="footer-derecha">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
+    <footer class="footer">
+        <div class="footer__derecha">
+            <a href="#" class="footer__derecha--a"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="footer__derecha--a"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="footer__derecha--a"><i class="fa fa-instagram"></i></a>
             <p>&copy; 2021 - Desarrollada por Damián Cabrio</p>
         </div>
-        <div class="footer-izquierda">
-            <p>Suscribite a nuesta newsletter</p>
+        <div class="footer__izquierda">
+            <p class="footer__izquierda--p">Suscribite a nuesta newsletter</p>
             <form action="#">
-                <input type="text" class="news-letter-input">
-                <button class="button-news-letter">Enviar</button>
+                <input type="text" class="footer__news-letter-input">
+                <button class="footer__button-news-letter">Enviar</button>
             </form>
         </div>
     </footer>

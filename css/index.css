@@ -8,14 +8,14 @@
 }
 
 /* Contenedor flex para las secciones, permiten que sean responsive */
-.contenedor-flex {
+.section__contenedor {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-/* Estilos para todos los divs hijos de contenedor-flex  */
-.contenedor-flex > div {
+/* Estilos para todos los divs hijos de section__contenedor  */
+.section__contenedor > div {
   width: 500px;
   margin: 15px;
   text-align: justify;

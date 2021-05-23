@@ -20,19 +20,17 @@
 
 <body>
     <!-- Inicio Navbar -->
-    <navbar>
-        <nav class="navbar">
-            <a href="index.html" class="logo">Patagonic</a>
-            <input class="hamburger-btn" type="checkbox" id="hamburger-btn" />
-            <label class="icono-menu" for="hamburger-btn"><span class="navicon"></span></label>
-            <ul class="menu">
-                <li><a href="index.html" class="navlink-activo">Inicio</a></li>
-                <li><a href="experiencia.html">Experiencia</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </navbar>
+    <header class="navbar">
+        <a href="index.html" class="navbar__logo">Patagonic</a>
+        <input class="hamburger-btn" type="checkbox" id="hamburger-btn" />
+        <label class="navbar_icono-desplegable" for="hamburger-btn"><span class="navicon"></span></label>
+        <ul class="navbar__menu">
+            <li><a href="index.html" class="navbar__link--activo">Inicio</a></li>
+            <li><a href="experiencia.html">Experiencia</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </header>
     <!-- Fin Navbar -->
 
     <!-- Inicio Secciones Main -->
@@ -40,19 +38,19 @@
         <!-- Inicio Hero -->
         <section>
             <div class="imagen-hero hero">
-                <div class="texto-hero">
-                    <h1>Bienvenido a Patagonic</h1>
-                    <p>Haz tus sueños realidad</p>
+                <div class="hero__texto">
+                    <h1 class="hero__texto--h1">Enterate de lo ultimo</h1>
+                    <p class="hero__texto--p">Adelantate a los demás</p>
                 </div>
             </div>
         </section>
         <!-- Fin Hero -->
 
         <!-- Inicio Nuestro objetivo -->
-        <section>
-            <h3 class="titulos">Nuestro objetivo</h3>
+        <section class="section">
+            <h3 class="section__titulos">Nuestro objetivo</h3>
             <hr>
-            <div class="contenedor-flex">
+            <div class="section__contenedor">
                 <div>
                     <img src="img/placeholder-img.jpg" alt="" width="350px" class="alinear-img-centro">
                 </div>
@@ -75,9 +73,9 @@
 
         <!-- Inicio Sobre nosotros -->
         <section>
-            <h3 class="titulos">Sobre Nosotros</h3>
+            <h3 class="section__titulos">Sobre Nosotros</h3>
             <hr>
-            <div class="contenedor-flex">
+            <div class="section__contenedor">
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque at voluptates, ipsum quae
                         autem
@@ -102,18 +100,18 @@
     <!-- Fin Secciones Main -->
 
     <!-- Inicio footer -->
-    <footer class="footer-distribuido">
-        <div class="footer-derecha">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
+    <footer class="footer">
+        <div class="footer__derecha">
+            <a href="#" class="footer__derecha--a"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="footer__derecha--a"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="footer__derecha--a"><i class="fa fa-instagram"></i></a>
             <p>&copy; 2021 - Desarrollada por Damián Cabrio</p>
         </div>
-        <div class="footer-izquierda">
-            <p>Suscribite a nuesta newsletter</p>
+        <div class="footer__izquierda">
+            <p class="footer__izquierda--p">Suscribite a nuesta newsletter</p>
             <form action="#">
-                <input type="text" class="news-letter-input">
-                <button class="button-news-letter">Enviar</button>
+                <input type="text" class="footer__news-letter-input">
+                <button class="footer__button-news-letter">Enviar</button>
             </form>
         </div>
     </footer>
