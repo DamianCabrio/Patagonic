@@ -1,7 +1,7 @@
 /* Estilos Hero inicio */
 
 /* Estilos para la sección Hero */
-.imagen-hero {
+.hero__imagen {
   /* Agrega la imagen de fondo con una gradiente por encima para que se oscurezca un poco la foto */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/contacto.jpg");
@@ -12,7 +12,9 @@
 /* Inicio estilos formulario contacto */
 
 /* Estilos para el input del contacto */
-.inputs-contacto {
+.contacto form input[type="text"],
+.contacto form textarea,
+.contacto form select {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -24,7 +26,7 @@
 }
 
 /* Estilo base para los botones del formulario */
-.boton {
+.contacto__boton {
   color: white;
   padding: 12px 20px;
   border: none;
@@ -33,29 +35,30 @@
 }
 
 /* Estilos para el boton de submit */
-.boton-submit {
+.contacto__boton--submit {
   background-color: #4caf50;
 }
 
 /* Estilos para el boton de reset */
-.boton-reset {
+.contacto__boton--reset {
   background-color: #336fb3;
 }
 
 /* Estilos hover para los botones */
-.boton-submit:hover {
+.contacto__boton--submit:hover {
   background-color: #45a049;
 }
-.boton-reset:hover {
+.contacto__boton--reset:hover {
   background-color: #1d4d85;
 }
 
 /* Establece el contenedor que va a ocupar el formulario */
-.contenedor {
+.contacto {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
   max-width: 750px;
   margin: auto;
 }
+
 /* Fin estilos formulario contacto */

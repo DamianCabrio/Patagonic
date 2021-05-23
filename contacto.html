@@ -37,29 +37,29 @@
     <main>
         <!-- Inicio Hero -->
         <section>
-            <div class="imagen-hero hero">
+            <div class="hero__imagen hero">
                 <div class="hero__texto">
-                    <h1 class="hero__texto--h1">Enterate de lo ultimo</h1>
-                    <p class="hero__texto--p">Adelantate a los demás</p>
+                    <h1>Ponte en contacto</h1>
+                    <p>Juntos podemos hacer cualquier cosa</p>
                 </div>
             </div>
         </section>
         <!-- Fin Hero -->
 
         <!-- Inicio sección contacto -->
-        <section class="contenedor">
+        <section class="contacto">
             <h3 class="section__titulos">Contacto</h3>
             <hr>
             <form action="">
-
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre.." class="inputs-contacto">
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..">
 
                 <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" name="apellido" placeholder="Tu apellido.." class="inputs-contacto">
+                <input type="text" id="apellido" name="apellido" placeholder="Tu apellido..">
 
                 <label for="pais">País</label>
-                <select id="pais" name="pais" class="inputs-contacto">
+
+                <select id="pais" name="pais">
                     <option value="argentina">Argentina</option>
                     <option value="bolivia">Bolivia</option>
                     <option value="brasil">Brasil</option>
@@ -67,14 +67,14 @@
                 </select>
 
                 <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" placeholder="Escriba su Mensaje.." style="height:200px"
-                    class="inputs-contacto"></textarea>
+                <textarea id="mensaje" name="mensaje" placeholder="Escriba su Mensaje.."
+                    style="height:200px"></textarea>
 
                 <label for="terminos">¿Acepta los términos y condiciones?</label>
                 <input type="checkbox" id="terminos" name="terminos">
                 <br><br>
-                <input type="submit" value="Enviar" class="boton boton-submit">
-                <input type="reset" value="Restablecer" class="boton boton-reset">
+                <input type="submit" value="Enviar" class="contacto__boton contacto__boton--submit">
+                <input type="reset" value="Restablecer" class="contacto__boton contacto__boton--reset">
 
             </form>
         </section>
@@ -85,13 +85,13 @@
     <!-- Inicio footer -->
     <footer class="footer">
         <div class="footer__derecha">
-            <a href="#" class="footer__derecha--a"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="footer__derecha--a"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="footer__derecha--a"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
             <p>&copy; 2021 - Desarrollada por Damián Cabrio</p>
         </div>
         <div class="footer__izquierda">
-            <p class="footer__izquierda--p">Suscribite a nuesta newsletter</p>
+            <p>Suscribite a nuesta newsletter</p>
             <form action="#">
                 <input type="text" class="footer__news-letter-input">
                 <button class="footer__button-news-letter">Enviar</button>

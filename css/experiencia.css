@@ -1,13 +1,15 @@
 /* Estilos Hero inicio */
 
 /* Estilos para la sección Hero */
-.imagen-hero {
+.hero__imagen {
   /* Agrega la imagen de fondo con una gradiente por encima para que se oscurezca un poco la foto */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/experiencia.jpg");
 }
+/* Estilos Hero Fin */
 
 /* Inicio estilos tabla responsive */
+
 /* Todos los media queries son para marcar el estilo dependiendo del tamaño de la pantalla, si la tabla se ve en un celular, la tabla se va a ver con un estilo
 individual por cada fila */
 #experiencia a {
@@ -18,40 +20,25 @@ individual por cada fila */
   color: #046a38;
 }
 
-.container {
-  margin: 5% 3%;
-}
-@media (min-width: 48em) {
-  .container {
-    margin: 2%;
-  }
-}
-@media (min-width: 75em) {
-  .container {
-    margin: 2em auto;
-    max-width: 75em;
-  }
-}
-
-.tabla-responsive {
+.experiencia__tabla {
   margin: auto;
   width: 100%;
   margin-bottom: 1.5em;
   border-spacing: 0;
 }
 @media (min-width: 48em) {
-  .tabla-responsive {
+  .experiencia__tabla {
     font-size: 0.9em;
     width: 75%;
   }
 }
 @media (min-width: 62em) {
-  .tabla-responsive {
+  .experiencia__tabla {
     font-size: 1em;
     width: 50%;
   }
 }
-.tabla-responsive thead {
+.experiencia__tabla thead {
   position: absolute;
   clip: rect(1px 1px 1px 1px);
   padding: 0;
@@ -61,7 +48,7 @@ individual por cada fila */
   overflow: hidden;
 }
 @media (min-width: 48em) {
-  .tabla-responsive thead {
+  .experiencia__tabla thead {
     position: relative;
     clip: auto;
     height: auto;
@@ -69,139 +56,139 @@ individual por cada fila */
     overflow: auto;
   }
 }
-.tabla-responsive thead th {
+.experiencia__tabla thead th {
   background-color: #26890d;
   border: 1px solid #86bc25;
   font-weight: normal;
   text-align: center;
   color: white;
 }
-.tabla-responsive thead th:first-of-type {
+.experiencia__tabla thead th:first-of-type {
   text-align: left;
 }
-.tabla-responsive tbody,
-.tabla-responsive tr,
-.tabla-responsive th,
-.tabla-responsive td {
+.experiencia__tabla tbody,
+.experiencia__tabla tr,
+.experiencia__tabla th,
+.experiencia__tabla td {
   display: block;
   padding: 0;
   text-align: left;
   white-space: normal;
 }
 @media (min-width: 48em) {
-  .tabla-responsive tr {
+  .experiencia__tabla tr {
     display: table-row;
   }
 }
-.tabla-responsive th,
-.tabla-responsive td {
+.experiencia__tabla th,
+.experiencia__tabla td {
   padding: 0.5em;
   vertical-align: middle;
 }
 @media (min-width: 30em) {
-  .tabla-responsive th,
-  .tabla-responsive td {
+  .experiencia__tabla th,
+  .experiencia__tabla td {
     padding: 0.75em 0.5em;
   }
 }
 @media (min-width: 48em) {
-  .tabla-responsive th,
-  .tabla-responsive td {
+  .experiencia__tabla th,
+  .experiencia__tabla td {
     display: table-cell;
     padding: 0.5em;
   }
 }
 @media (min-width: 62em) {
-  .tabla-responsive th,
-  .tabla-responsive td {
+  .experiencia__tabla th,
+  .experiencia__tabla td {
     padding: 0.75em 0.5em;
   }
 }
 @media (min-width: 75em) {
-  .tabla-responsive th,
-  .tabla-responsive td {
+  .experiencia__tabla th,
+  .experiencia__tabla td {
     padding: 0.75em;
   }
 }
 
-.tabla-responsive tfoot {
+.experiencia__tabla tfoot {
   font-size: 0.8em;
   font-style: italic;
 }
 @media (min-width: 62em) {
-  .tabla-responsive tfoot {
+  .experiencia__tabla tfoot {
     font-size: 0.9em;
   }
 }
 @media (min-width: 48em) {
-  .tabla-responsive tbody {
+  .experiencia__tabla tbody {
     display: table-row-group;
   }
 }
-.tabla-responsive tbody tr {
+.experiencia__tabla tbody tr {
   margin-bottom: 1em;
 }
 @media (min-width: 48em) {
-  .tabla-responsive tbody tr {
+  .experiencia__tabla tbody tr {
     display: table-row;
     border-width: 1px;
   }
 }
-.tabla-responsive tbody tr:last-of-type {
+.experiencia__tabla tbody tr:last-of-type {
   margin-bottom: 0;
 }
 @media (min-width: 48em) {
-  .tabla-responsive tbody tr:nth-of-type(even) {
+  .experiencia__tabla tbody tr:nth-of-type(even) {
     background-color: rgba(0, 0, 0, 0.12);
   }
 }
-.tabla-responsive tbody th[scope="row"] {
+.experiencia__tabla tbody th[scope="row"] {
   background-color: #26890d;
   color: white;
 }
 @media (min-width: 30em) {
-  .tabla-responsive tbody th[scope="row"] {
+  .experiencia__tabla tbody th[scope="row"] {
     border-left: 1px solid #86bc25;
     border-bottom: 1px solid #86bc25;
   }
 }
 @media (min-width: 48em) {
-  .tabla-responsive tbody th[scope="row"] {
+  .experiencia__tabla tbody th[scope="row"] {
     background-color: transparent;
     color: #000001;
     text-align: left;
   }
 }
-.tabla-responsive tbody td {
+.experiencia__tabla tbody td {
   text-align: right;
 }
 @media (min-width: 48em) {
-  .tabla-responsive tbody td {
+  .experiencia__tabla tbody td {
     border-left: 1px solid #86bc25;
     border-bottom: 1px solid #86bc25;
     text-align: center;
   }
 }
 @media (min-width: 48em) {
-  .tabla-responsive tbody td:last-of-type {
+  .experiencia__tabla tbody td:last-of-type {
     border-right: 1px solid #86bc25;
   }
 }
 
 /* Esta parte le pone los títulos a cada fila, cuando la tabla se ve por filas individuales */
-.tabla-responsive tbody td[data-title]:before {
+.experiencia__tabla tbody td[data-title]:before {
   content: attr(data-title);
   float: left;
   font-size: 0.8em;
   color: rgba(0, 0, 0, 0.54);
 }
 @media (min-width: 30em) {
-  .tabla-responsive tbody td[data-title]:before {
+  .experiencia__tabla tbody td[data-title]:before {
     font-size: 0.9em;
   }
 }
 @media (min-width: 48em) {
-  .tabla-responsive tbody td[data-title]:before {
+  .experiencia__tabla tbody td[data-title]:before {
     content: none;
   }
 }
@@ -209,10 +196,11 @@ individual por cada fila */
 /* Fin estilos tabla responsive */
 
 /* Contenedor para la lista ordenada */
-.contenedor {
+.equipo__contenedor {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
   max-width: 750px;
   margin: auto;
+  text-align: center;
 }
