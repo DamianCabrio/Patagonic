@@ -16,18 +16,57 @@
   width: 75%;
 }
 
-/* Imagen ficticia */
-.columna__tarjeta--img {
-  background-color: #aaa;
-  width: 95%;
-  padding: 20px;
-}
-
 /* Agrega estilo de tarjeta para cada entrada */
 .columna__tarjeta {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
+  width: 100%;
+}
+
+/* Estilos para el grid cuando el ancho de la pantalla es menor a 1024px */
+.grid {
+  display: grid;
+  grid-template-areas:
+    "titulo"
+    "imagen"
+    "texto";
+  gap: 20px;
+}
+
+/* Estilos para el grid cuando el ancho de la pantalla es mayor a 1024px */
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "titulo  imagen"
+      "texto  imagen"
+      "texto imagen";
+  }
+}
+
+/* Asigna el area del titulo en el grid */
+.grid__titulo {
+  grid-area: titulo;
+}
+
+/* Asigna el area del texto en el grid */
+.grid__texto {
+  grid-area: texto;
+}
+
+/* Asigna el area de la imagen en el grid */
+.grid__imagen {
+  margin: auto;
+  grid-area: imagen;
+}
+
+/* Estilos para el elemento img de la entrada de blog, hace al tamaño de la imagen responsive */
+.grid__imagen--img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  padding: 20px;
 }
 
 /* Fin estilos entradas blog */
