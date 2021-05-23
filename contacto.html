@@ -5,10 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Estilos base -->
-    <link rel="stylesheet" href="css/base.css" />
-    <!-- Estilos contacto -->
-    <link rel="stylesheet" href="css/contacto.css" />
     <!-- normalize.css -->
     <link
       href="https://unpkg.com/@csstools/normalize.css/evergreen.css"
@@ -19,6 +15,31 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
     />
+
+    <!-- Estilos base -->
+    <link rel="stylesheet" href="css/base.css" />
+    <!-- Estilos contacto -->
+    <link rel="stylesheet" href="css/contacto.css" />
+
+    <!-- wow.js y su dependencia animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+      integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      new WOW().init();
+    </script>
 
     <title>Patagonic - Contacto</title>
   </head>
@@ -41,7 +62,7 @@
         <li><a href="idea.html">Generador de ideas</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li>
-          <a href="contacto.html" class="navbar__link--activo">Contacto</a>
+          <a href="#" class="navbar__link--activo">Contacto</a>
         </li>
       </ul>
     </header>
@@ -52,7 +73,7 @@
       <!-- Inicio Hero -->
       <section>
         <div class="hero__imagen hero">
-          <div class="hero__texto">
+          <div class="hero__texto wow fadeIn" data-wow-duration="1.5s">
             <h1>Ponte en contacto</h1>
             <p>Juntos podemos hacer cualquier cosa</p>
           </div>
@@ -119,13 +140,13 @@
 
     <!-- Inicio footer -->
     <footer class="footer">
-      <div class="footer__derecha">
+      <div class="footer__derecha wow fadeInRight">
         <a href="#"><i class="fa fa-facebook"></i></a>
         <a href="#"><i class="fa fa-twitter"></i></a>
         <a href="#"><i class="fa fa-instagram"></i></a>
         <p>&copy; 2021 - Desarrollada por Damián Cabrio</p>
       </div>
-      <div class="footer__izquierda">
+      <div class="footer__izquierda wow fadeInLeft">
         <p>Suscribite a nuesta newsletter</p>
         <form action="#">
           <input type="text" class="footer__news-letter-input" />

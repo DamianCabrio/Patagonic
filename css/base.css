@@ -82,6 +82,7 @@ a {
   padding: 20px 20px;
   border-right: 1px solid #f4f4f4;
   text-decoration: none;
+  transition: background-color 0.5s;
 }
 
 .navbar__link--activo {
@@ -91,7 +92,7 @@ a {
 /* Le da el estilo a los links del navbar, y al botón responsive del menu, cuando le les pone el mouse arriba */
 .navbar li a:hover:not(.navbar__link--activo),
 .navbar .navbar__hamburger-btn:hover:not(.navbar__link--activo) {
-  background-color: #f4f4f4;
+  background-color: #e2e2e2;
 }
 
 /* Le da el estilo a el navbar__logo del lado izquierdo */
@@ -268,14 +269,14 @@ a {
   font-size: 18px;
   font-weight: 300;
   cursor: pointer;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Estilos para el botón de suscribirse a newsletter cuando se le pone el mouse arriba */
 .footer__button-news-letter:hover {
   background-color: transparent;
   border-color: #fff;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Flota los links a las redes a la derecha */

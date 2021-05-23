@@ -37,11 +37,13 @@
 /* Estilos para el boton de submit */
 .contacto__boton--submit {
   background-color: #4caf50;
+  transition: background-color 0.2s;
 }
 
 /* Estilos para el boton de reset */
 .contacto__boton--reset {
   background-color: #336fb3;
+  transition: background-color 0.2s;
 }
 
 /* Estilos hover para los botones */

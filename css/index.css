@@ -46,6 +46,31 @@
 
 .seccion__img:hover .seccion__descripcion-img {
   display: block;
+  animation: fade-in-desc 0.2s;
+}
+
+/* Para la transición de la descripción de las imágenes */
+.seccion__img:not(:hover) .seccion__descripcion-img.did-fade-in {
+  display: block;
+  animation: fade-out-desc 0.2s;
+}
+
+@keyframes fade-in-desc {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out-desc {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 .seccion__descripcion-img--texto {

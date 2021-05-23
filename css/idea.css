@@ -39,6 +39,7 @@
 /* Estilos para el boton de generar */
 .section__boton--generar {
   background-color: #4caf50;
+  transition: background-color 0.3s;
 }
 
 /* Estilo hover para el botone */
