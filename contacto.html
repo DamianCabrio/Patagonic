@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Patagonic - Contacto</title>
+</head>
+
+<body>
+    <!-- Inicio Navbar -->
+    <navbar>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Patagonic</a>
+            <input class="hamburger-btn" type="checkbox" id="hamburger-btn" />
+            <label class="icono-menu" for="hamburger-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="experiencia.html">Experiencia</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html" class="navlink-activo">Contacto</a></li>
+            </ul>
+        </nav>
+    </navbar>
+    <!-- Fin Navbar -->
+
+    <!-- Inicio Secciones Main -->
+    <main>
+        <!-- Inicio Hero -->
+        <section>
+            <div class="imagen-hero hero">
+                <div class="texto-hero">
+                    <h1>Ponte en contacto</h1>
+                    <p>Juntos podemos hacer cualquier cosa</p>
+                </div>
+            </div>
+        </section>
+        <!-- Fin Hero -->
+
+        <!-- Inicio sección contacto -->
+        <section class="contenedor">
+            <h3 class="titulos">Contacto</h3>
+            <hr>
+            <form action="">
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre.." class="inputs-contacto">
+
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Tu apellido.." class="inputs-contacto">
+
+                <label for="pais">País</label>
+                <select id="pais" name="pais" class="inputs-contacto">
+                    <option value="argentina">Argentina</option>
+                    <option value="bolivia">Bolivia</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escriba su Mensaje.." style="height:200px"
+                    class="inputs-contacto"></textarea>
+
+                <label for="terminos">¿Acepta los términos y condiciones?</label>
+                <input type="checkbox" id="terminos" name="terminos">
+                <br><br>
+                <input type="submit" value="Enviar" class="boton boton-submit">
+                <input type="reset" value="Restablecer" class="boton boton-reset">
+
+            </form>
+        </section>
+        <!-- Fin sección contacto -->
+    </main>
+    <!-- Fin Secciones Main -->
+
+    <!-- Inicio footer -->
+    <footer class="footer-distribuido">
+        <div class="footer-derecha">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <p>&copy; 2021 - Desarrollada por Damián Cabrio</p>
+        </div>
+        <div class="footer-izquierda">
+            <p>Suscribite a nuesta newsletter</p>
+            <form action="#">
+                <input type="text" class="news-letter-input">
+                <button class="button-news-letter">Enviar</button>
+            </form>
+        </div>
+    </footer>
+    <!-- Fin footer -->
+
+</body>
+
+</html>
