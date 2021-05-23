@@ -1,0 +1,311 @@
+/* Estilos generales inicio */
+
+/* Le dan al body y html el 100% del alto disponible */
+body,
+html {
+  height: 100%;
+}
+
+/* Le quita el margen al body, le da color de fonto y establece la fuente */
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Le pone color negro a los links */
+a {
+  color: #000;
+}
+
+/* Estilos generales fin */
+
+/* Estilos hero base inicio */
+.hero {
+  /* Establece el alto y el padding */
+  height: 50%;
+  padding-top: 450px;
+
+  /* Centra al fondo, y permite que se vea bien en cualquier tamaño de pantalla */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Estilos para el texto del hero */
+.texto-hero {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* Estilos específicamente para el H1 del hero */
+.texto-hero h1 {
+  font-size: 3em;
+  text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.66);
+}
+
+/* Estilos específicamente para el P del hero */
+.texto-hero p {
+  font-size: 1.5em;
+}
+/* Estilos Hero base Fin */
+
+/* Estilos para los títulos de las secciones */
+.titulos {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.8em;
+}
+
+/* Estilos navbar inicio */
+
+/* Estilos generales para el navbar */
+.navbar {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+/* Le quita los estilos predeterminados a el UL del navbar */
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+/* Le da el estilo a los links del navbar */
+.navbar li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.navlink-activo {
+  background-color: #a0d18c;
+}
+
+/* Le da el estilo a los links del navbar, y al botón responsive del menu, cuando le les pone el mouse arriba */
+.navbar li a:hover:not(.navlink-activo),
+.navbar .hamburger-btn:hover:not(.navlink-activo) {
+  background-color: #f4f4f4;
+}
+
+/* Le da el estilo a el logo del lado izquierdo */
+.navbar .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* Le da estilo al menu desplegable, y su transición cuando se abre */
+.navbar .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* Le da estilo al contenedor del botón para desplegar el menu responsive */
+.navbar .icono-menu {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+/* Icono del menu desplegable, crea las tres lineas que se ven, utilizando before y after */
+.navbar .icono-menu .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+.navbar .icono-menu .navicon:before,
+.navbar .icono-menu .navicon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+.navbar .icono-menu .navicon:before {
+  top: 5px;
+}
+.navbar .icono-menu .navicon:after {
+  top: -5px;
+}
+
+/* Oculta al checkbox que servirá como habilitador del menu desplegable */
+.navbar .hamburger-btn {
+  display: none;
+}
+
+/* Transición del botón para habilitar menu desplegable, al hacerle click */
+.navbar .hamburger-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.navbar .hamburger-btn:checked ~ .icono-menu .navicon {
+  background: transparent;
+}
+
+.navbar .hamburger-btn:checked ~ .icono-menu .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.navbar .hamburger-btn:checked ~ .icono-menu .navicon:after {
+  transform: rotate(45deg);
+}
+
+.navbar .hamburger-btn:checked ~ .icono-menu:not(.steps) .navicon:before,
+.navbar .hamburger-btn:checked ~ .icono-menu:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* Fin Icono del menu desplegable */
+
+/* Cuando el ancho disponible es menor a 48em, cambia el estilo del navbar, para mostrarse verticalmente */
+@media (min-width: 48em) {
+  .navbar li {
+    float: left;
+  }
+  .navbar li a {
+    padding: 20px 30px;
+  }
+  .navbar .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .navbar .icono-menu {
+    display: none;
+  }
+}
+
+/* Estilos navbar fin */
+
+/* Estilos footer inicio */
+
+/* Estilos general del footer */
+.footer-distribuido {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+  color: white;
+}
+
+/* Estilos para los p de la parte izquierda */
+.footer-distribuido .footer-izquierda p {
+  font-size: 22px;
+  margin: 0;
+}
+
+/* Estilos para el input de newsletter */
+.news-letter-input {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  border: 1px solid #2d9fd9;
+  color: #a0d18c;
+  width: 200px;
+  height: 30px;
+  padding-left: 10px;
+  display: inline;
+  margin-top: 15px;
+}
+/* Estilos para el input de newsletter al hacer click */
+.news-letter-input:focus {
+  outline: none;
+  border: 1px solid #a0d18c;
+  color: #2d9fd9;
+}
+
+/* Estilos para el botón de suscribirse a newsletter */
+.button-news-letter {
+  display: inline;
+  position: relative;
+  width: 80px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #1c89ff;
+  border: solid 1px transparent;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+/* Estilos para el botón de suscribirse a newsletter cuando se le pone el mouse arriba */
+.button-news-letter:hover {
+  background-color: transparent;
+  border-color: #fff;
+  transition: all 0.1s ease-in-out;
+}
+
+/* Flota los links a las redes a la derecha */
+.footer-distribuido .footer-derecha {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+/* Estilos para los links a redes sociales */
+.footer-distribuido .footer-derecha a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition: all 0.25s;
+}
+
+/* Efecto al hacer hover sobre los links a redes sociales */
+.footer-distribuido .footer-derecha a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+/* Permite que el footer sea responsive, posiciona los dos elementos del footer de forma vertical */
+@media (max-width: 48em) {
+  .footer-distribuido .footer-izquierda,
+  .footer-distribuido .footer-derecha {
+    text-align: center;
+  }
+  .footer-distribuido .footer-derecha {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distribuido .footer-izquierda p.footer-links {
+    line-height: 1.8;
+  }
+}
+
+/* Estilos footer fin */
