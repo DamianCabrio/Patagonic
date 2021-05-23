@@ -90,7 +90,7 @@ a {
 
 /* Le da el estilo a los links del navbar, y al botón responsive del menu, cuando le les pone el mouse arriba */
 .navbar li a:hover:not(.navbar__link--activo),
-.navbar .hamburger-btn:hover:not(.navbar__link--activo) {
+.navbar .navbar__hamburger-btn:hover:not(.navbar__link--activo) {
   background-color: #f4f4f4;
 }
 
@@ -116,7 +116,7 @@ a {
 }
 
 /* Le da estilo al contenedor del botón para desplegar el menu responsive */
-.navbar_icono-desplegable {
+.navbar__icono-desplegable {
   cursor: pointer;
   display: inline-block;
   float: right;
@@ -126,7 +126,7 @@ a {
 }
 
 /* Icono del menu desplegable, crea las tres lineas que se ven, utilizando before y after */
-.navbar_icono-desplegable .navicon {
+.navbar__icono-desplegable .navbar__navicon {
   background: #333;
   display: block;
   height: 2px;
@@ -134,8 +134,8 @@ a {
   transition: background 0.2s ease-out;
   width: 18px;
 }
-.navbar_icono-desplegable .navicon:before,
-.navbar_icono-desplegable .navicon:after {
+.navbar__icono-desplegable .navbar__navicon:before,
+.navbar__icono-desplegable .navbar__navicon:after {
   background: #333;
   content: "";
   display: block;
@@ -144,43 +144,52 @@ a {
   transition: all 0.2s ease-out;
   width: 100%;
 }
-.navbar_icono-desplegable .navicon:before {
+.navbar__icono-desplegable .navbar__navicon:before {
   top: 5px;
 }
-.navbar_icono-desplegable .navicon:after {
+.navbar__icono-desplegable .navbar__navicon:after {
   top: -5px;
 }
 
 /* Oculta al checkbox que servirá como habilitador del menu desplegable */
-.navbar .hamburger-btn {
+.navbar .navbar__hamburger-btn {
   display: none;
 }
 
 /* Transición del botón para habilitar menu desplegable, al hacerle click */
-.navbar .hamburger-btn:checked ~ .navbar__menu {
+.navbar .navbar__hamburger-btn:checked ~ .navbar__menu {
   max-height: 240px;
 }
 
-.navbar .hamburger-btn:checked ~ .navbar_icono-desplegable .navicon {
+.navbar
+  .navbar__hamburger-btn:checked
+  ~ .navbar__icono-desplegable
+  .navbar__navicon {
   background: transparent;
 }
 
-.navbar .hamburger-btn:checked ~ .navbar_icono-desplegable .navicon:before {
+.navbar
+  .navbar__hamburger-btn:checked
+  ~ .navbar__icono-desplegable
+  .navbar__navicon:before {
   transform: rotate(-45deg);
 }
 
-.navbar .hamburger-btn:checked ~ .navbar_icono-desplegable .navicon:after {
+.navbar
+  .navbar__hamburger-btn:checked
+  ~ .navbar__icono-desplegable
+  .navbar__navicon:after {
   transform: rotate(45deg);
 }
 
 .navbar
-  .hamburger-btn:checked
-  ~ .navbar_icono-desplegable:not(.steps)
-  .navicon:before,
+  .navbar__hamburger-btn:checked
+  ~ .navbar__icono-desplegable:not(.steps)
+  .navbar__navicon:before,
 .navbar
-  .hamburger-btn:checked
-  ~ .navbar_icono-desplegable:not(.steps)
-  .navicon:after {
+  .navbar__hamburger-btn:checked
+  ~ .navbar__icono-desplegable:not(.steps)
+  .navbar__navicon:after {
   top: 0;
 }
 
@@ -199,7 +208,7 @@ a {
     float: right;
     max-height: none;
   }
-  .navbar .navbar_icono-desplegable {
+  .navbar .navbar__icono-desplegable {
     display: none;
   }
 }

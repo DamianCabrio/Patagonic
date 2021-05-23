@@ -1,113 +1,134 @@
 <!DOCTYPE html>
 <html lang="es-AR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Estilos base -->
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/base.css" />
     <!-- Estilos blog -->
-    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/blog.css" />
     <!-- normalize.css -->
-    <link href="https://unpkg.com/@csstools/normalize.css/evergreen.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/@csstools/normalize.css/evergreen.css"
+      rel="stylesheet"
+    />
     <!-- font-awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    />
 
     <title>Patagonic - Blog</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Inicio Navbar -->
     <header class="navbar">
-        <a href="index.html" class="navbar__logo">Patagonic</a>
-        <input class="hamburger-btn" type="checkbox" id="hamburger-btn" />
-        <label class="navbar_icono-desplegable" for="hamburger-btn"><span class="navicon"></span></label>
-        <ul class="navbar__menu">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="experiencia.html">Experiencia</a></li>
-            <li><a href="blog.html" class="navbar__link--activo">Blog</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+      <a href="index.html" class="navbar__logo">Patagonic</a>
+      <input
+        class="navbar__hamburger-btn"
+        type="checkbox"
+        id="navbar__hamburger-btn"
+      />
+      <label class="navbar__icono-desplegable" for="navbar__hamburger-btn"
+        ><span class="navbar__navicon"></span
+      ></label>
+      <ul class="navbar__menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+        <li><a href="idea.html">Generador de ideas</a></li>
+        <li><a href="blog.html" class="navbar__link--activo">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
     </header>
     <!-- Fin Navbar -->
 
     <!-- Inicio Secciones Main -->
     <main>
-        <!-- Inicio Hero -->
-        <section>
-            <div class="hero__imagen hero">
-                <div class="hero__texto">
-                    <h1 class="hero__texto--h1">Enterate de lo ultimo</h1>
-                    <p class="hero__texto--p">Adelantate a los demás</p>
-                </div>
-            </div>
-        </section>
-        <!-- Fin Hero -->
+      <!-- Inicio Hero -->
+      <section>
+        <div class="hero__imagen hero">
+          <div class="hero__texto">
+            <h1>Enterate de lo ultimo</h1>
+            <p>Adelantate a los demás</p>
+          </div>
+        </div>
+      </section>
+      <!-- Fin Hero -->
 
-        <!-- Inicio Sección blog -->
-        <section>
-            <div class="columna">
-                <div class="columna__tarjeta">
-                    <h2>TITULO</h2>
-                    <h5>Descripción, Dec 7, 2020</h5>
-                    <div class="columna__tarjeta--img" style="height:200px;">Imagen</div>
-                    <p>Texto..</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quam quis numquam tenetur, iusto
-                        delectus commodi minus, cum illum adipisci expedita, ratione fugit rem aliquam reiciendis. Ea
-                        quidem deserunt asperiores.
-                        Dignissimos, distinctio illum quis molestiae nobis itaque at eum nulla, tempore molestias illo
-                        provident quibusdam quasi. Reprehenderit facilis asperiores, consectetur, quasi necessitatibus a
-                        tempore laudantium harum iure, ipsum laboriosam veritatis!.</p>
-                </div>
-                <div class="columna__tarjeta">
-                    <h2>TITULO</h2>
-                    <h5>Descripción, Dec 7, 2020</h5>
-                    <div class="columna__tarjeta--img" style="height:200px;">Imagen</div>
-                    <p>Texto..</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quam quis numquam tenetur, iusto
-                        delectus commodi minus, cum illum adipisci expedita, ratione fugit rem aliquam reiciendis. Ea
-                        quidem deserunt asperiores.
-                        Dignissimos, distinctio illum quis molestiae nobis itaque at eum nulla, tempore molestias illo
-                        provident quibusdam quasi. Reprehenderit facilis asperiores, consectetur, quasi necessitatibus a
-                        tempore laudantium harum iure, ipsum laboriosam veritatis!.</p>
-                </div>
-                <div class="paginacion">
-                    <a href="#">&laquo;</a>
-                    <a href="#" class="paginacion--activo">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
-                    <a href="#">6</a>
-                    <a href="#">&raquo;</a>
-                </div>
+      <!-- Inicio Sección blog -->
+      <section>
+        <div class="columna">
+          <div class="columna__tarjeta">
+            <h2>TITULO</h2>
+            <h5>Descripción, Dec 7, 2020</h5>
+            <div class="columna__tarjeta--img" style="height: 200px">
+              Imagen
             </div>
-        </section>
-        <!-- Fin Sección blog -->
-
+            <p>Texto..</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quam
+              quis numquam tenetur, iusto delectus commodi minus, cum illum
+              adipisci expedita, ratione fugit rem aliquam reiciendis. Ea quidem
+              deserunt asperiores. Dignissimos, distinctio illum quis molestiae
+              nobis itaque at eum nulla, tempore molestias illo provident
+              quibusdam quasi. Reprehenderit facilis asperiores, consectetur,
+              quasi necessitatibus a tempore laudantium harum iure, ipsum
+              laboriosam veritatis!.
+            </p>
+          </div>
+          <div class="columna__tarjeta">
+            <h2>TITULO</h2>
+            <h5>Descripción, Dec 7, 2020</h5>
+            <div class="columna__tarjeta--img" style="height: 200px">
+              Imagen
+            </div>
+            <p>Texto..</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quam
+              quis numquam tenetur, iusto delectus commodi minus, cum illum
+              adipisci expedita, ratione fugit rem aliquam reiciendis. Ea quidem
+              deserunt asperiores. Dignissimos, distinctio illum quis molestiae
+              nobis itaque at eum nulla, tempore molestias illo provident
+              quibusdam quasi. Reprehenderit facilis asperiores, consectetur,
+              quasi necessitatibus a tempore laudantium harum iure, ipsum
+              laboriosam veritatis!.
+            </p>
+          </div>
+          <div class="paginacion">
+            <a href="#">&laquo;</a>
+            <a href="#" class="paginacion--activo">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+          </div>
+        </div>
+      </section>
+      <!-- Fin Sección blog -->
     </main>
     <!-- Fin Secciones Main -->
 
     <!-- Inicio footer -->
     <footer class="footer">
-        <div class="footer__derecha">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <p>&copy; 2021 - Desarrollada por Damián Cabrio</p>
-        </div>
-        <div class="footer__izquierda">
-            <p>Suscribite a nuesta newsletter</p>
-            <form action="#">
-                <input type="text" class="footer__news-letter-input">
-                <button class="footer__button-news-letter">Enviar</button>
-            </form>
-        </div>
+      <div class="footer__derecha">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <p>&copy; 2021 - Desarrollada por Damián Cabrio</p>
+      </div>
+      <div class="footer__izquierda">
+        <p>Suscribite a nuesta newsletter</p>
+        <form action="#">
+          <input type="text" class="footer__news-letter-input" />
+          <button class="footer__button-news-letter">Enviar</button>
+        </form>
+      </div>
     </footer>
     <!-- Fin footer -->
-
-</body>
-
+  </body>
 </html>

@@ -4,7 +4,7 @@
 .hero__imagen {
   /* Agrega la imagen de fondo con una gradiente por encima para que se oscurezca un poco la foto */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/blog.png");
+    url("../img/blog.jpg");
 }
 
 /* Estilos Hero Fin */

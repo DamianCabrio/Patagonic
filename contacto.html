@@ -1,105 +1,138 @@
 <!DOCTYPE html>
 <html lang="es-AR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Estilos base -->
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/base.css" />
     <!-- Estilos contacto -->
-    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/contacto.css" />
     <!-- normalize.css -->
-    <link href="https://unpkg.com/@csstools/normalize.css/evergreen.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/@csstools/normalize.css/evergreen.css"
+      rel="stylesheet"
+    />
     <!-- font-awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    />
 
     <title>Patagonic - Contacto</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Inicio Navbar -->
     <header class="navbar">
-        <a href="index.html" class="navbar__logo">Patagonic</a>
-        <input class="hamburger-btn" type="checkbox" id="hamburger-btn" />
-        <label class="navbar_icono-desplegable" for="hamburger-btn"><span class="navicon"></span></label>
-        <ul class="navbar__menu">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="experiencia.html">Experiencia</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contacto.html" class="navbar__link--activo">Contacto</a></li>
-        </ul>
+      <a href="index.html" class="navbar__logo">Patagonic</a>
+      <input
+        class="navbar__hamburger-btn"
+        type="checkbox"
+        id="navbar__hamburger-btn"
+      />
+      <label class="navbar__icono-desplegable" for="navbar__hamburger-btn"
+        ><span class="navbar__navicon"></span
+      ></label>
+      <ul class="navbar__menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+        <li><a href="idea.html">Generador de ideas</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li>
+          <a href="contacto.html" class="navbar__link--activo">Contacto</a>
+        </li>
+      </ul>
     </header>
     <!-- Fin Navbar -->
 
     <!-- Inicio Secciones Main -->
     <main>
-        <!-- Inicio Hero -->
-        <section>
-            <div class="hero__imagen hero">
-                <div class="hero__texto">
-                    <h1>Ponte en contacto</h1>
-                    <p>Juntos podemos hacer cualquier cosa</p>
-                </div>
-            </div>
-        </section>
-        <!-- Fin Hero -->
+      <!-- Inicio Hero -->
+      <section>
+        <div class="hero__imagen hero">
+          <div class="hero__texto">
+            <h1>Ponte en contacto</h1>
+            <p>Juntos podemos hacer cualquier cosa</p>
+          </div>
+        </div>
+      </section>
+      <!-- Fin Hero -->
 
-        <!-- Inicio sección contacto -->
-        <section class="contacto">
-            <h3 class="section__titulos">Contacto</h3>
-            <hr>
-            <form action="">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..">
+      <!-- Inicio sección contacto -->
+      <section class="contacto">
+        <h3 class="section__titulos">Contacto</h3>
+        <hr />
+        <form action="">
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Tu nombre.."
+          />
 
-                <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" name="apellido" placeholder="Tu apellido..">
+          <label for="apellido">Apellido</label>
+          <input
+            type="text"
+            id="apellido"
+            name="apellido"
+            placeholder="Tu apellido.."
+          />
 
-                <label for="pais">País</label>
+          <label for="pais">País</label>
 
-                <select id="pais" name="pais">
-                    <option value="argentina">Argentina</option>
-                    <option value="bolivia">Bolivia</option>
-                    <option value="brasil">Brasil</option>
-                    <option value="otro">Otro</option>
-                </select>
+          <select id="pais" name="pais">
+            <option value="argentina">Argentina</option>
+            <option value="bolivia">Bolivia</option>
+            <option value="brasil">Brasil</option>
+            <option value="otro">Otro</option>
+          </select>
 
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" placeholder="Escriba su Mensaje.."
-                    style="height:200px"></textarea>
+          <label for="mensaje">Mensaje</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            placeholder="Escriba su Mensaje.."
+            style="height: 200px"
+          ></textarea>
 
-                <label for="terminos">¿Acepta los términos y condiciones?</label>
-                <input type="checkbox" id="terminos" name="terminos">
-                <br><br>
-                <input type="submit" value="Enviar" class="contacto__boton contacto__boton--submit">
-                <input type="reset" value="Restablecer" class="contacto__boton contacto__boton--reset">
-
-            </form>
-        </section>
-        <!-- Fin sección contacto -->
+          <label for="terminos">¿Acepta los términos y condiciones?</label>
+          <input type="checkbox" id="terminos" name="terminos" />
+          <br /><br />
+          <input
+            type="submit"
+            value="Enviar"
+            class="contacto__boton contacto__boton--submit"
+          />
+          <input
+            type="reset"
+            value="Restablecer"
+            class="contacto__boton contacto__boton--reset"
+          />
+        </form>
+      </section>
+      <!-- Fin sección contacto -->
     </main>
     <!-- Fin Secciones Main -->
 
     <!-- Inicio footer -->
     <footer class="footer">
-        <div class="footer__derecha">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <p>&copy; 2021 - Desarrollada por Damián Cabrio</p>
-        </div>
-        <div class="footer__izquierda">
-            <p>Suscribite a nuesta newsletter</p>
-            <form action="#">
-                <input type="text" class="footer__news-letter-input">
-                <button class="footer__button-news-letter">Enviar</button>
-            </form>
-        </div>
+      <div class="footer__derecha">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <p>&copy; 2021 - Desarrollada por Damián Cabrio</p>
+      </div>
+      <div class="footer__izquierda">
+        <p>Suscribite a nuesta newsletter</p>
+        <form action="#">
+          <input type="text" class="footer__news-letter-input" />
+          <button class="footer__button-news-letter">Enviar</button>
+        </form>
+      </div>
     </footer>
     <!-- Fin footer -->
-
-</body>
-
+  </body>
 </html>
