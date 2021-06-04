@@ -1,192 +1,189 @@
 <!DOCTYPE html>
 <html lang="es-AR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- normalize.css -->
-    <link
-      href="https://unpkg.com/@csstools/normalize.css/evergreen.css"
-      rel="stylesheet"
-    />
-    <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Estilos base -->
-    <link rel="stylesheet" href="css/base.css" />
-    <!-- Estilos index -->
-    <link rel="stylesheet" href="css/index.css" />
+  <!-- normalize.css -->
+  <link href="https://unpkg.com/@csstools/normalize.css/evergreen.css" rel="stylesheet" />
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
 
-    <!-- wow.js y su dependencia animate.css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-      integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!-- wow.js y su dependencia animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script>
-      new WOW().init();
-    </script>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
 
-    <title>Patagonic</title>
-  </head>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
 
-  <body>
-    <!-- Inicio Navbar -->
-    <header class="navbar">
-      <a href="index.html" class="navbar__logo">Patagonic</a>
-      <input
-        class="navbar__hamburger-btn"
-        type="checkbox"
-        id="navbar__hamburger-btn"
-      />
-      <label class="navbar__icono-desplegable" for="navbar__hamburger-btn"
-        ><span class="navbar__navicon"></span
-      ></label>
-      <ul class="navbar__menu">
-        <li><a href="#" class="navbar__link--activo">Inicio</a></li>
-        <li><a href="experiencia.html">Experiencia</a></li>
-        <li><a href="idea.html">Generador de ideas</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </header>
-    <!-- Fin Navbar -->
+  <!-- Estilos base -->
+  <link rel="stylesheet" href="css/base.css" />
+  <!-- Estilos index -->
+  <link rel="stylesheet" href="css/index.css" />
 
-    <!-- Inicio Secciones Main -->
-    <main>
-      <!-- Inicio Hero -->
-      <section>
-        <div class="hero__imagen hero">
-          <div class="hero__texto wow fadeIn" data-wow-duration="1.5s">
-            <h1>Bienvenido a Patagonic</h1>
-            <p>Haz tus sueños realidad</p>
-          </div>
+  <script>
+    new WOW().init();
+  </script>
+
+  <title>Patagonic</title>
+</head>
+
+<body>
+  <!-- Inicio Navbar -->
+  <section id="nav-section">
+    <nav class="container navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">Patagonic</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar la navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="nav-elements collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav text-center ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="experiencia.html">Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="idea.html">Generador de ideas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <!-- Fin Navbar -->
+
+  <!-- Inicio Secciones Main -->
+  <main>
+    <!-- Inicio Hero -->
+    <section>
+      <div class="hero__imagen hero">
+        <div class="hero__texto wow fadeIn" data-wow-duration="1.5s">
+          <h1>Bienvenido a Patagonic</h1>
+          <p>Haz tus sueños realidad</p>
         </div>
-      </section>
-      <!-- Fin Hero -->
+      </div>
+    </section>
+    <!-- Fin Hero -->
 
-      <!-- Inicio Nuestro objetivo -->
-      <section class="section">
-        <h3 class="section__titulos">Nuestro objetivo</h3>
-        <hr />
-        <div class="section__contenedor">
-          <div>
-            <div class="seccion__img">
-              <img
-                src="img/placeholder-img.jpg"
-                alt="Nuestros Objetivos"
-                width="350px"
-                class="alinear-img-centro"
-              />
-              <div class="seccion__descripcion-img">
-                <div class="seccion__descripcion-img--texto">
-                  Imagen sobre nuestros objetivos
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-              itaque at voluptates, ipsum quae autem iusto blanditiis sint
-              dolorum dicta quas, dolores error quam, beatae atque nobis culpa
-              nihil velit! Hic itaque labore error eligendi alias suscipit eaque
-              repudiandae autem ex aliquid quos praesentium, eum aperiam minima
-              dolor fugiat, consequuntur doloribus temporibus voluptatibus sequi
-              soluta sunt. Numquam quo laboriosam voluptates!
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- Fin Nuestro objetivo -->
-
-      <!-- Inicio Sobre nosotros -->
-      <section>
-        <h3 class="section__titulos">Sobre Nosotros</h3>
-        <hr />
-        <div class="section__contenedor">
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-              itaque at voluptates, ipsum quae autem iusto blanditiis sint
-              dolorum dicta quas, dolores error quam, beatae atque nobis culpa
-              nihil velit! Hic itaque labore error eligendi alias suscipit eaque
-              repudiandae autem ex aliquid quos praesentium, eum aperiam minima
-              dolor fugiat, consequuntur doloribus temporibus voluptatibus sequi
-              soluta sunt. Numquam quo laboriosam voluptates!
-            </p>
-          </div>
-          <div>
-            <div class="seccion__img">
-              <img
-                src="img/nosotros.jpg"
-                alt="Sobre Nosotros"
-                width="400px"
-                class="alinear-img-centro"
-              />
-              <div class="seccion__descripcion-img">
-                <div class="seccion__descripcion-img--texto">
-                  Imagen sobre nosotros
-                </div>
+    <!-- Inicio Nuestro objetivo -->
+    <section class="section">
+      <h3 class="section__titulos">Nuestro objetivo</h3>
+      <hr />
+      <div class="section__contenedor">
+        <div>
+          <div class="seccion__img">
+            <img src="img/placeholder-img.jpg" alt="Nuestros Objetivos" width="350px" class="alinear-img-centro" />
+            <div class="seccion__descripcion-img">
+              <div class="seccion__descripcion-img--texto">
+                Imagen sobre nuestros objetivos
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Fin Sobre nosotros -->
-    </main>
-    <!-- Fin Secciones Main -->
-
-    <!-- Inicio footer -->
-    <footer class="footer">
-      <div class="footer__derecha wow fadeInRight">
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-instagram"></i></a>
-        <p>&copy; 2021 - Desarrollada por Damián Cabrio</p>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+            itaque at voluptates, ipsum quae autem iusto blanditiis sint
+            dolorum dicta quas, dolores error quam, beatae atque nobis culpa
+            nihil velit! Hic itaque labore error eligendi alias suscipit eaque
+            repudiandae autem ex aliquid quos praesentium, eum aperiam minima
+            dolor fugiat, consequuntur doloribus temporibus voluptatibus sequi
+            soluta sunt. Numquam quo laboriosam voluptates!
+          </p>
+        </div>
       </div>
-      <div class="footer__izquierda wow fadeInLeft">
-        <p>Suscribite a nuesta newsletter</p>
-        <form action="#">
-          <input type="text" class="footer__news-letter-input" />
-          <button class="footer__button-news-letter">Enviar</button>
-        </form>
+    </section>
+    <!-- Fin Nuestro objetivo -->
+
+    <!-- Inicio Sobre nosotros -->
+    <section>
+      <h3 class="section__titulos">Sobre Nosotros</h3>
+      <hr />
+      <div class="section__contenedor">
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+            itaque at voluptates, ipsum quae autem iusto blanditiis sint
+            dolorum dicta quas, dolores error quam, beatae atque nobis culpa
+            nihil velit! Hic itaque labore error eligendi alias suscipit eaque
+            repudiandae autem ex aliquid quos praesentium, eum aperiam minima
+            dolor fugiat, consequuntur doloribus temporibus voluptatibus sequi
+            soluta sunt. Numquam quo laboriosam voluptates!
+          </p>
+        </div>
+        <div>
+          <div class="seccion__img">
+            <img src="img/nosotros.jpg" alt="Sobre Nosotros" width="400px" class="alinear-img-centro" />
+            <div class="seccion__descripcion-img">
+              <div class="seccion__descripcion-img--texto">
+                Imagen sobre nosotros
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </footer>
-    <!-- Fin footer -->
+    </section>
+    <!-- Fin Sobre nosotros -->
+  </main>
+  <!-- Fin Secciones Main -->
 
-    <script>
-      //Este Javascript permite hacer un fade out de las descripciones de las imágenes
-      //algo que con css solo no se podría hacer, en este caso particular.
-      //Para lograr esto, javascript escucha a los eventos animationstart y animation end
-      //si empieza una animación, y esta se llama fade-in-desc, se le agrega la clase did-fade-in a el elemento.
-      //En el css hay un selector que selecciona a esta clase, y cuando se deja de hacer hover a la imagen inicia el fade out
-      //y quita la clase did-fade-in
-      document.addEventListener("animationstart", function (e) {
-        if (e.animationName === "fade-in-desc") {
-          e.target.classList.add("did-fade-in");
-        }
-      });
+  <!-- Inicio footer -->
+  <footer class="footer">
+    <div class="footer__derecha wow fadeInRight">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <p>&copy; 2021 - Desarrollada por Damián Cabrio</p>
+    </div>
+    <div class="footer__izquierda wow fadeInLeft">
+      <p>Suscribite a nuesta newsletter</p>
+      <form action="#">
+        <input type="text" class="footer__news-letter-input" />
+        <button class="footer__button-news-letter">Enviar</button>
+      </form>
+    </div>
+  </footer>
+  <!-- Fin footer -->
 
-      document.addEventListener("animationend", function (e) {
-        if (e.animationName === "fade-out-desc") {
-          e.target.classList.remove("did-fade-in");
-        }
-      });
-    </script>
-  </body>
+  <script>
+    //Este Javascript permite hacer un fade out de las descripciones de las imágenes
+    //algo que con css solo no se podría hacer, en este caso particular.
+    //Para lograr esto, javascript escucha a los eventos animationstart y animation end
+    //si empieza una animación, y esta se llama fade-in-desc, se le agrega la clase did-fade-in a el elemento.
+    //En el css hay un selector que selecciona a esta clase, y cuando se deja de hacer hover a la imagen inicia el fade out
+    //y quita la clase did-fade-in
+    document.addEventListener("animationstart", function (e) {
+      if (e.animationName === "fade-in-desc") {
+        e.target.classList.add("did-fade-in");
+      }
+    });
+
+    document.addEventListener("animationend", function (e) {
+      if (e.animationName === "fade-out-desc") {
+        e.target.classList.remove("did-fade-in");
+      }
+    });
+  </script>
+</body>
+
 </html>

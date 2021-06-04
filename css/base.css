@@ -67,151 +67,29 @@ a {
 /* Estilos navbar inicio */
 
 /* Estilos generales para el navbar */
-.navbar {
-  background-color: #fff;
-  position: fixed;
-  width: 100%;
-  z-index: 3;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+#nav-section {
+  font-size: 1.2rem;
+  margin: 0.1% 7%;
+}
+.navbar-brand {
+  font-size: 2rem;
+  transition: 0.2s ease-in-out;
+}
+.navbar-brand:hover {
+  transform: scale(1.1);
+}
+.nav-link {
+  margin-left: 25px;
+  transition: 0.2s ease-in-out;
+}
+.nav-link:hover {
+  transform: scale(1.05);
 }
 
-/* Le da el estilo a los links del navbar */
-.navbar li a {
-  display: block;
-  padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
-  text-decoration: none;
-  transition: background-color 0.5s;
-}
-
-.navbar__link--activo {
-  background-color: #a0d18c;
-}
-
-/* Le da el estilo a los links del navbar, y al botón responsive del menu, cuando le les pone el mouse arriba */
-.navbar li a:hover:not(.navbar__link--activo),
-.navbar .navbar__hamburger-btn:hover:not(.navbar__link--activo) {
-  background-color: #e2e2e2;
-}
-
-/* Le da el estilo a el navbar__logo del lado izquierdo */
-.navbar__logo {
-  display: block;
-  float: left;
-  font-size: 2em;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
-/* Le da estilo al menu desplegable, y su transición cuando se abre */
-.navbar__menu {
-  clear: both;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  background-color: #fff;
-}
-
-/* Le da estilo al contenedor del botón para desplegar el menu responsive */
-.navbar__icono-desplegable {
-  cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 28px 20px;
-  position: relative;
-  user-select: none;
-}
-
-/* Icono del menu desplegable, crea las tres lineas que se ven, utilizando before y after */
-.navbar__icono-desplegable .navbar__navicon {
-  background: #333;
-  display: block;
-  height: 2px;
-  position: relative;
-  transition: background 0.2s ease-out;
-  width: 18px;
-}
-.navbar__icono-desplegable .navbar__navicon:before,
-.navbar__icono-desplegable .navbar__navicon:after {
-  background: #333;
-  content: "";
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all 0.2s ease-out;
-  width: 100%;
-}
-.navbar__icono-desplegable .navbar__navicon:before {
-  top: 5px;
-}
-.navbar__icono-desplegable .navbar__navicon:after {
-  top: -5px;
-}
-
-/* Oculta al checkbox que servirá como habilitador del menu desplegable */
-.navbar .navbar__hamburger-btn {
-  display: none;
-}
-
-/* Transición del botón para habilitar menu desplegable, al hacerle click */
-.navbar .navbar__hamburger-btn:checked ~ .navbar__menu {
-  max-height: 240px;
-}
-
-.navbar
-  .navbar__hamburger-btn:checked
-  ~ .navbar__icono-desplegable
-  .navbar__navicon {
-  background: transparent;
-}
-
-.navbar
-  .navbar__hamburger-btn:checked
-  ~ .navbar__icono-desplegable
-  .navbar__navicon:before {
-  transform: rotate(-45deg);
-}
-
-.navbar
-  .navbar__hamburger-btn:checked
-  ~ .navbar__icono-desplegable
-  .navbar__navicon:after {
-  transform: rotate(45deg);
-}
-
-.navbar
-  .navbar__hamburger-btn:checked
-  ~ .navbar__icono-desplegable:not(.steps)
-  .navbar__navicon:before,
-.navbar
-  .navbar__hamburger-btn:checked
-  ~ .navbar__icono-desplegable:not(.steps)
-  .navbar__navicon:after {
-  top: 0;
-}
-
-/* Fin Icono del menu desplegable */
-
-/* Cuando el ancho disponible es menor a 55em, cambia el estilo del navbar, para mostrarse verticalmente */
-@media (min-width: 55em) {
-  .navbar li {
-    float: left;
-  }
-  .navbar li a {
-    padding: 20px 30px;
-  }
-  .navbar__menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  .navbar .navbar__icono-desplegable {
-    display: none;
-  }
+.active {
+  background-color: lightgray;
+  border-radius: 10px;
 }
 
 /* Estilos navbar fin */

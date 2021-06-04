@@ -1,191 +1,269 @@
 <!DOCTYPE html>
 <html lang="es-AR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- normalize.css -->
-    <link
-      href="https://unpkg.com/@csstools/normalize.css/evergreen.css"
-      rel="stylesheet"
-    />
-    <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Estilos base -->
-    <link rel="stylesheet" href="css/base.css" />
-    <!-- Estilos experiencia -->
-    <link rel="stylesheet" href="css/experiencia.css" />
+  <!-- normalize.css -->
+  <link href="https://unpkg.com/@csstools/normalize.css/evergreen.css" rel="stylesheet" />
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
 
-    <!-- wow.js y su dependencia animate.css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-      integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!-- wow.js y su dependencia animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script>
-      new WOW().init();
-    </script>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
 
-    <title>Patagonic - Experiencia</title>
-  </head>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
 
-  <body>
-    <!-- Inicio Navbar -->
-    <header class="navbar">
-      <a href="index.html" class="navbar__logo">Patagonic</a>
-      <input
-        class="navbar__hamburger-btn"
-        type="checkbox"
-        id="navbar__hamburger-btn"
-      />
-      <label class="navbar__icono-desplegable" for="navbar__hamburger-btn"
-        ><span class="navbar__navicon"></span
-      ></label>
-      <ul class="navbar__menu">
-        <li><a href="index.html">Inicio</a></li>
-        <li>
-          <a href="#" class="navbar__link--activo">Experiencia</a>
-        </li>
-        <li><a href="idea.html">Generador de ideas</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </header>
-    <!-- Fin Navbar -->
+  <!-- Estilos base -->
+  <link rel="stylesheet" href="css/base.css" />
+  <!-- Estilos index -->
+  <link rel="stylesheet" href="css/experiencia.css" />
 
-    <!-- Inicio Secciones Main -->
-    <main>
-      <!-- Inicio Hero -->
-      <section>
-        <div class="hero__imagen hero">
-          <div class="hero__texto wow fadeIn" data-wow-duration="1.5s">
-            <h1>Hemos trabajado mucho</h1>
-            <p>Vos podes ser el siguiente</p>
+  <script>
+    new WOW().init();
+  </script>
+
+  <title>Patagonic - Experiencia</title>
+</head>
+
+<body>
+  <!-- Inicio Navbar -->
+  <section id="nav-section">
+    <nav class="container navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">Patagonic</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar la navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="nav-elements collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav text-center ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="idea.html">Generador de ideas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <!-- Fin Navbar -->
+
+  <!-- Inicio Secciones Main -->
+  <main>
+    <!-- Inicio Hero -->
+    <section>
+      <div class="hero__imagen hero">
+        <div class="hero__texto wow fadeIn" data-wow-duration="1.5s">
+          <h1>Hemos trabajado mucho</h1>
+          <p>Vos podes ser el siguiente</p>
+        </div>
+      </div>
+    </section>
+    <!-- Fin Hero -->
+
+    <!-- Inicio Nuestra experiencia -->
+    <section id="experiencia" class="experiencia">
+      <h3 class="section__titulos">Nuestra experiencia</h3>
+      <hr />
+      <table class="experiencia__tabla">
+        <thead>
+          <tr>
+            <th scope="col">Empresa</th>
+            <th scope="col">Año</th>
+            <th scope="col">Cant. Visitas</th>
+            <th scope="col">Visitar</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td colspan="7"><button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#ver-mas">Ver
+                mas</button></td>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <th scope="row">Disney</th>
+            <td data-title="Año">2015</td>
+            <td data-title="Visitas">12000</td>
+            <td data-title="Visitar"><a href="">Ver</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Marvel</th>
+            <td data-title="Año">2019</td>
+            <td data-title="Visitas">120000</td>
+            <td data-title="Visitar"><a href="">Ver</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Mcdonalds</th>
+            <td data-title="Año">2015</td>
+            <td data-title="Visitas">12000</td>
+            <td data-title="Visitar"><a href="">Ver</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Sony</th>
+            <td data-title="Año">2015</td>
+            <td data-title="Visitas">12000</td>
+            <td data-title="Visitar"><a href="">Ver</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Adidas</th>
+            <td data-title="Año">2015</td>
+            <td data-title="Visitas">12000</td>
+            <td data-title="Visitar"><a href="">Ver</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Netflix</th>
+            <td data-title="Año">2015</td>
+            <td data-title="Visitas">12000</td>
+            <td data-title="Visitar"><a href="">Ver</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Disney</th>
+            <td data-title="Año">2015</td>
+            <td data-title="Visitas">12000</td>
+            <td data-title="Visitar"><a href="">Ver</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Disney</th>
+            <td data-title="Año">2015</td>
+            <td data-title="Visitas">12000</td>
+            <td data-title="Visitar"><a href="">Ver</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div class="modal fade" id="ver-mas" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Galería de trabajos</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/mas-trabajos/1.jpg" class="d-block w-100" alt="Trabajo con caballos">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/mas-trabajos/2.jpg" class="d-block w-100" alt="Ciencia">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/mas-trabajos/3.jpg" class="d-block w-100" alt="Hackeando NAS">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
           </div>
         </div>
-      </section>
-      <!-- Fin Hero -->
+      </div>
+    </div>
+    <!-- Fin Nuestra experiencia -->
 
-      <!-- Inicio Nuestra experiencia -->
-      <section id="experiencia" class="experiencia">
-        <h3 class="section__titulos">Nuestra experiencia</h3>
-        <hr />
-        <table class="experiencia__tabla">
-          <thead>
-            <tr>
-              <th scope="col">Empresa</th>
-              <th scope="col">Año</th>
-              <th scope="col">Cant. Visitas</th>
-              <th scope="col">Visitar</th>
-            </tr>
-          </thead>
-          <tfoot>
-            <tr>
-              <td colspan="7"><a href="">Ver mas</a></td>
-            </tr>
-          </tfoot>
-          <tbody>
-            <tr>
-              <th scope="row">Disney</th>
-              <td data-title="Año">2015</td>
-              <td data-title="Visitas">12000</td>
-              <td data-title="Visitar"><a href="">Ver</a></td>
-            </tr>
-            <tr>
-              <th scope="row">Marvel</th>
-              <td data-title="Año">2019</td>
-              <td data-title="Visitas">120000</td>
-              <td data-title="Visitar"><a href="">Ver</a></td>
-            </tr>
-            <tr>
-              <th scope="row">Mcdonalds</th>
-              <td data-title="Año">2015</td>
-              <td data-title="Visitas">12000</td>
-              <td data-title="Visitar"><a href="">Ver</a></td>
-            </tr>
-            <tr>
-              <th scope="row">Sony</th>
-              <td data-title="Año">2015</td>
-              <td data-title="Visitas">12000</td>
-              <td data-title="Visitar"><a href="">Ver</a></td>
-            </tr>
-            <tr>
-              <th scope="row">Adidas</th>
-              <td data-title="Año">2015</td>
-              <td data-title="Visitas">12000</td>
-              <td data-title="Visitar"><a href="">Ver</a></td>
-            </tr>
-            <tr>
-              <th scope="row">Netflix</th>
-              <td data-title="Año">2015</td>
-              <td data-title="Visitas">12000</td>
-              <td data-title="Visitar"><a href="">Ver</a></td>
-            </tr>
-            <tr>
-              <th scope="row">Disney</th>
-              <td data-title="Año">2015</td>
-              <td data-title="Visitas">12000</td>
-              <td data-title="Visitar"><a href="">Ver</a></td>
-            </tr>
-            <tr>
-              <th scope="row">Disney</th>
-              <td data-title="Año">2015</td>
-              <td data-title="Visitas">12000</td>
-              <td data-title="Visitar"><a href="">Ver</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <!-- Fin Nuestra experiencia -->
-
-      <!-- Inicio Nuestro equipo -->
-      <section id="equipo" class="equipo">
-        <h3 class="section__titulos">Nuestra experiencia</h3>
-        <hr />
-        <div class="equipo__contenedor">
-          <ol>
-            <li>Pedro Lopez - Jefe - 35 años de experiencia</li>
-            <li>Lorenzo Manto - Senior Dev - 12 años de experiencia</li>
-            <li>Julia Morato - Marketing - 15 años de experiencia</li>
-            <li>Gordon Freeman - Científico - 8 años de experiencia</li>
-          </ol>
+    <!-- Inicio Nuestro equipo -->
+    <section id="equipo" class="equipo">
+      <h3 class="section__titulos">El equipo</h3>
+      <hr />
+      <div class="equipo__contenedor">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/equipo/1.jpg" class="card-img-top" alt="Pedro Lopez">
+              <div class="card-body">
+                <h5 class="card-title">Pedro Lopez</h5>
+                <p class="card-text">CEO - 35 años de experiencia</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/equipo/2.jpg" class="card-img-top" alt="Lorenzo Manto">
+              <div class="card-body">
+                <h5 class="card-title">Lorenzo Manto</h5>
+                <p class="card-text">Senior Dev - 12 años de experiencia</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/equipo/4.jpg" class="card-img-top" alt="Julia Morato">
+              <div class="card-body">
+                <h5 class="card-title">Julia Morato</h5>
+                <p class="card-text">Marketing - 15 años de experiencia</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/equipo/3.jpg" class="card-img-top" alt="Gordon Freeman">
+              <div class="card-body">
+                <h5 class="card-title">Gordon Freeman</h5>
+                <p class="card-text">Científico - 8 años de experiencia</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
-      <!-- Fin Nuestro equipo -->
-    </main>
-    <!-- Fin Secciones Main -->
+      </div>
+    </section>
+    <!-- Fin Nuestro equipo -->
+  </main>
+  <!-- Fin Secciones Main -->
 
-    <!-- Inicio footer -->
-    <footer class="footer">
-      <div class="footer__derecha wow fadeInRight">
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-instagram"></i></a>
-        <p>&copy; 2021 - Desarrollada por Damián Cabrio</p>
-      </div>
-      <div class="footer__izquierda wow fadeInLeft">
-        <p>Suscribite a nuesta newsletter</p>
-        <form action="#">
-          <input type="text" class="footer__news-letter-input" />
-          <button class="footer__button-news-letter">Enviar</button>
-        </form>
-      </div>
-    </footer>
-    <!-- Fin footer -->
-  </body>
+  <!-- Inicio footer -->
+  <footer class="footer">
+    <div class="footer__derecha wow fadeInRight">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <p>&copy; 2021 - Desarrollada por Damián Cabrio</p>
+    </div>
+    <div class="footer__izquierda wow fadeInLeft">
+      <p>Suscribite a nuesta newsletter</p>
+      <form action="#">
+        <input type="text" class="footer__news-letter-input" />
+        <button class="footer__button-news-letter">Enviar</button>
+      </form>
+    </div>
+  </footer>
+  <!-- Fin footer -->
+</body>
+
 </html>

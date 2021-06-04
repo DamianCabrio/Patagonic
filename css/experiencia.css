@@ -195,6 +195,20 @@ individual por cada fila */
 
 /* Fin estilos tabla responsive */
 
+.carousel-item.principal {
+  padding-left: 25%;
+}
+
+@media screen and (max-width: 475px) {
+  .carousel-item.principal {
+    padding-left: 33%;
+  }
+
+  button.btn.btn-primary {
+    margin-bottom: 3%;
+  }
+}
+
 /* Contenedor para la lista ordenada */
 .equipo__contenedor {
   border-radius: 5px;
