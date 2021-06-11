@@ -1,3 +1,5 @@
+@import "partials/variables";
+
 /* Estilos Hero inicio */
 
 /* Estilos para la sección Hero */
@@ -25,6 +27,15 @@
   display: flex;
   flex-direction: column;
   align-items: flex-middle;
+
+  /* Estilos para el texto de las ideas generadas al azar */
+  &--texto {
+    border-bottom: 1px dashed black;
+    margin-right: 5px;
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+  }
 }
 
 /* Estilo base para el botón de generar */
@@ -34,24 +45,15 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
 
-/* Estilos para el boton de generar */
-.section__boton--generar {
-  background-color: #4caf50;
-  transition: background-color 0.3s;
-}
+  /* Estilos para el boton de generar */
+  &--generar {
+    background-color: $color-green;
+    transition: background-color 0.3s;
 
-/* Estilo hover para el botone */
-.section__boton--generar:hover {
-  background-color: #45a049;
-}
-
-/* Estilos para el texto de las ideas generadas al azar */
-.section__generador--texto {
-  border-bottom: 1px dashed black;
-  margin-right: 5px;
-  display: inline-block;
-  width: 300px;
-  text-align: center;
+    /* Estilo hover para el botone */
+    &:hover {
+      background-color: $color-green-hover;
+    }
+  }
 }

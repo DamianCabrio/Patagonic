@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap");
+@import "partials/variables";
+
+/* Estilos generales inicio */
+/* Le dan al body y html el 100% del alto disponible */
+body,
+html {
+  height: 100%;
+}
+
+/* Le quita el margen al body, le da color de fonto y establece la fuente */
+body {
+  margin: 0;
+  font-family: "Arimo", sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Le pone color negro a los links */
+a {
+  color: #000;
+}
+
+/* Estilos generales fin */
+
+/* Estilos hero base inicio */
+.hero {
+  /* Establece el alto y el padding */
+  height: 50%;
+  padding-top: 450px;
+
+  /* Centra al fondo, y permite que se vea bien en cualquier tamaño de pantalla */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  /* Estilos para el texto del hero */
+  .hero__texto {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+
+    /* Estilos específicamente para el H1 del hero */
+    & h1 {
+      font-size: 3em;
+      text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.66);
+    }
+
+    /* Estilos específicamente para el P del hero */
+    & p {
+      font-size: 1.5em;
+    }
+  }
+}
+
+/* Estilos Hero base Fin */
+
+/* Estilos para los títulos de las secciones */
+.section__titulos {
+  text-align: center;
+  margin-top: 30px + $margin-superior-titulo;
+  font-size: 1.8em;
+}
+
+/* Estilos navbar inicio */
+
+/* Estilos generales para el navbar */
+#nav-section {
+  font-size: 1.2rem;
+  margin: 0.1% 7%;
+
+  .navbar-brand {
+    font-size: 2rem;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .nav-link {
+    margin-left: 25px;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .active {
+    background-color: rgba($color-green, 0.8);
+    border-radius: 10px;
+  }
+}
+
+/* Estilos navbar fin */
+
+/* Estilos footer inicio */
+
+/* Estilos general del footer */
+.footer {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px;
+  padding: 45px 50px;
+  color: white;
+
+  /* Estilos para el input de newsletter */
+  &__news-letter-input {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border: 1px solid $color-blue;
+    color: #a0d18c;
+    width: 200px;
+    height: 30px;
+    padding-left: 10px;
+    display: inline;
+    margin-top: 15px;
+
+    /* Estilos para el input de newsletter al hacer click */
+    &:focus {
+      outline: none;
+      border: 1px solid #a0d18c;
+      color: $color-blue;
+    }
+  }
+
+  /* Estilos para el botón de suscribirse a newsletter */
+  &__button-news-letter {
+    display: inline;
+    position: relative;
+    width: 80px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: $color-blue;
+    border: solid 1px transparent;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    /* Estilos para el botón de suscribirse a newsletter cuando se le pone el mouse arriba */
+    &:hover {
+      background-color: transparent;
+      border-color: #fff;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  /* Estilos para los p de la parte izquierda */
+  &__izquierda p {
+    font-size: 22px;
+    margin: 0;
+  }
+}
+
+/* Flota los links a las redes a la derecha */
+.footer__derecha {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+
+  /* Estilos para los links a redes sociales */
+  & a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    transition: all 0.25s;
+  }
+
+  /* Efecto al hacer hover sobre los links a redes sociales */
+  & a:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+
+  @each $red, $color in $redes-sociales {
+    .icon-#{$red}:hover {
+      background-color: $color;
+    }
+  }
+}
+
+/* Permite que el footer sea responsive, posiciona los dos elementos del footer de forma vertical */
+@media (max-width: 48em) {
+  .footer__izquierda,
+  .footer__derecha {
+    text-align: center;
+  }
+  .footer__derecha {
+    float: none;
+    margin: 0 auto 20px;
+  }
+}
+
+/* Estilos footer fin */

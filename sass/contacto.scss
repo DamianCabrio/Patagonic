@@ -1,3 +1,5 @@
+@import "partials/variables";
+
 /* Estilos Hero inicio */
 
 /* Estilos para la sección Hero */
@@ -11,33 +13,33 @@
 
 /* Inicio estilos formulario contacto */
 
-/* Estilos para el boton de submit */
-.contacto__boton--submit {
-  background-color: #4caf50;
-  transition: background-color 0.2s;
-}
-
-/* Estilos para el boton de reset */
-.contacto__boton--reset {
-  background-color: #336fb3;
-  transition: background-color 0.2s;
-}
-
-/* Estilos hover para los botones */
-.contacto__boton--submit:hover {
-  background-color: #45a049;
-}
-.contacto__boton--reset:hover {
-  background-color: #1d4d85;
-}
-
 /* Establece el contenedor que va a ocupar el formulario */
 .contacto {
   border-radius: 5px;
-  background-color: #f2f2f2;
   padding: 20px;
   max-width: 750px;
   margin: auto;
+
+  /* Estilos para el boton de submit */
+  &__boton--submit {
+    background-color: $color-green;
+    transition: background-color 0.2s;
+
+    /* Estilos hover para los botones */
+    &:hover {
+      background-color: $color-green-hover;
+    }
+  }
+
+  /* Estilos para el boton de reset */
+  &__boton--reset {
+    background-color: $color-blue;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: $color-blue-hover;
+    }
+  }
 }
 
 /* Fin estilos formulario contacto */

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAKA,AAAA,aAAa,AAAC,CAEZ,gBAAgB,CAAE,iDAAuD,CACvE,0BAA0B,CAC7B,AAOD,AAAA,SAAS,AAAC,CACR,aAAa,CAAE,GAAG,CAClB,OAAO,CAAE,IAAI,CACb,SAAS,CAAE,KAAK,CAChB,MAAM,CAAE,IAAI,CAsBb,AAnBE,AAAD,wBAAgB,AAAC,CACf,gBAAgB,CCxBN,OAAO,CDyBjB,UAAU,CAAE,qBAAqB,CAMlC,AARA,AAKC,wBALc,AAKb,MAAM,AAAC,CACN,gBAAgB,CC5BF,OAAO,CD6BtB,AAIF,AAAD,uBAAe,AAAC,CACd,gBAAgB,CCjCP,OAAO,CDkChB,UAAU,CAAE,qBAAqB,CAKlC,AAPA,AAIC,uBAJa,AAIZ,MAAM,AAAC,CACN,gBAAgB,CCpCH,OAAO,CDqCrB",
+    "sources": [
+        "../sass/contacto.scss",
+        "../sass/partials/_variables.scss"
+    ],
+    "names": [],
+    "file": "contacto.min.css"
+}

@@ -1,3 +1,17 @@
+@import "partials/variables";
+
+$cantidad-img-equipo: 4;
+$cantidad-img-trabajos: 3;
+
+@mixin bg-img($path, $width, $height, $bg-size, $class-name) {
+  .#{$class-name} {
+    background-image: url(#{$path});
+    background-size: $bg-size;
+    width: $width;
+    height: $height;
+  }
+}
+
 /* Estilos Hero inicio */
 
 /* Estilos para la sección Hero */
@@ -12,12 +26,23 @@
 
 /* Todos los media queries son para marcar el estilo dependiendo del tamaño de la pantalla, si la tabla se ve en un celular, la tabla se va a ver con un estilo
 individual por cada fila */
-#experiencia a {
-  color: #26890d;
+
+.btn-outline-success {
+  border-color: $color-green;
+
+  &:hover {
+    background-color: $color-green-hover;
+    border-color: $color-green-hover;
+  }
 }
-#experiencia a:hover,
-#experiencia a:focus {
-  color: #046a38;
+
+#experiencia a {
+  color: $color-green;
+
+  &:hover,
+  &:focus {
+    color: $color-green-hover;
+  }
 }
 
 .experiencia__tabla {
@@ -57,7 +82,7 @@ individual por cada fila */
   }
 }
 .experiencia__tabla thead th {
-  background-color: #26890d;
+  background-color: $color-green;
   border: 1px solid #86bc25;
   font-weight: normal;
   text-align: center;
@@ -143,7 +168,7 @@ individual por cada fila */
   }
 }
 .experiencia__tabla tbody th[scope="row"] {
-  background-color: #26890d;
+  background-color: $color-green;
   color: white;
 }
 @media (min-width: 30em) {
@@ -195,26 +220,27 @@ individual por cada fila */
 
 /* Fin estilos tabla responsive */
 
-.carousel-item.principal {
-  padding-left: 25%;
-}
-
-@media screen and (max-width: 475px) {
-  .carousel-item.principal {
-    padding-left: 33%;
-  }
-
-  button.btn.btn-primary {
-    margin-bottom: 3%;
+.carousel-item {
+  @for $i from 1 through $cantidad-img-trabajos {
+    @include bg-img(
+      "../img/mas-trabajos/#{$i}.jpg",
+      100%,
+      300px,
+      cover,
+      "img-trabajo-#{$i}"
+    );
   }
 }
 
 /* Contenedor para la lista ordenada */
 .equipo__contenedor {
   border-radius: 5px;
-  background-color: #f2f2f2;
   padding: 20px;
   max-width: 750px;
   margin: auto;
   text-align: center;
+
+  @for $i from 1 through $cantidad-img-equipo {
+    @include bg-img("../img/equipo/#{$i}.jpg", 100%, 160px, cover, "img-#{$i}");
+  }
 }

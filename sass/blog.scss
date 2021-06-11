@@ -14,14 +14,14 @@
 .columna {
   margin: auto;
   width: 75%;
-}
 
-/* Agrega estilo de tarjeta para cada entrada */
-.columna__tarjeta {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-  width: 100%;
+  /* Agrega estilo de tarjeta para cada entrada */
+  &__tarjeta {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+  }
 }
 
 /* Estilos para el grid cuando el ancho de la pantalla es menor a 1024px */
@@ -32,6 +32,30 @@
     "imagen"
     "texto";
   gap: 20px;
+
+  /* Asigna el area del titulo en el grid */
+  &__titulo {
+    grid-area: titulo;
+  }
+
+  /* Asigna el area del texto en el grid */
+  &__texto {
+    grid-area: texto;
+  }
+
+  /* Asigna el area de la imagen en el grid */
+  &__imagen {
+    margin: auto;
+    grid-area: imagen;
+
+    /* Estilos para el elemento img de la entrada de blog, hace al tamaño de la imagen responsive */
+    &--img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      padding: 20px;
+    }
+  }
 }
 
 /* Estilos para el grid cuando el ancho de la pantalla es mayor a 1024px */
@@ -45,30 +69,6 @@
   }
 }
 
-/* Asigna el area del titulo en el grid */
-.grid__titulo {
-  grid-area: titulo;
-}
-
-/* Asigna el area del texto en el grid */
-.grid__texto {
-  grid-area: texto;
-}
-
-/* Asigna el area de la imagen en el grid */
-.grid__imagen {
-  margin: auto;
-  grid-area: imagen;
-}
-
-/* Estilos para el elemento img de la entrada de blog, hace al tamaño de la imagen responsive */
-.grid__imagen--img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  padding: 20px;
-}
-
 /* Fin estilos entradas blog */
 
 /* Inicio estilos paginacion */
@@ -76,23 +76,23 @@
   display: inline-block;
   margin-top: 15px;
   margin-bottom: 10px;
-}
 
-.paginacion a {
-  color: black;
-  float: left;
-  padding: 8px 16px;
-  margin-bottom: 40px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
+  & a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    transition: background-color 0.3s;
 
-.paginacion a.paginacion--activo {
-  background-color: #4caf50;
-  color: white;
-}
+    &.paginacion--activo {
+      background-color: #4caf50;
+      color: white;
+    }
 
-.paginacion a:hover:not(.paginacion--activo) {
-  background-color: #ddd;
+    &:hover:not(.paginacion--activo) {
+      background-color: #ddd;
+    }
+  }
 }
 /* Fin estilos paginacion */

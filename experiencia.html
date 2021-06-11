@@ -29,9 +29,9 @@
     crossorigin="anonymous"></script>
 
   <!-- Estilos base -->
-  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/base.min.css" />
   <!-- Estilos index -->
-  <link rel="stylesheet" href="css/experiencia.css" />
+  <link rel="stylesheet" href="css/experiencia.min.css" />
 
   <script>
     new WOW().init();
@@ -147,12 +147,6 @@
             <td data-title="Visitas">12000</td>
             <td data-title="Visitar"><a href="">Ver</a></td>
           </tr>
-          <tr>
-            <th scope="row">Disney</th>
-            <td data-title="Año">2015</td>
-            <td data-title="Visitas">12000</td>
-            <td data-title="Visitar"><a href="">Ver</a></td>
-          </tr>
         </tbody>
       </table>
     </section>
@@ -169,13 +163,13 @@
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="img/mas-trabajos/1.jpg" class="d-block w-100" alt="Trabajo con caballos">
+                  <div class="img-trabajo-1 d-block w-100"></div>
                 </div>
                 <div class="carousel-item">
-                  <img src="img/mas-trabajos/2.jpg" class="d-block w-100" alt="Ciencia">
+                  <div class="img-trabajo-2 d-block w-100"></div>
                 </div>
                 <div class="carousel-item">
-                  <img src="img/mas-trabajos/3.jpg" class="d-block w-100" alt="Hackeando NAS">
+                  <div class="img-trabajo-3 d-block w-100"></div>
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -203,10 +197,10 @@
       <h3 class="section__titulos">El equipo</h3>
       <hr />
       <div class="equipo__contenedor">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100">
-              <img src="img/equipo/1.jpg" class="card-img-top" alt="Pedro Lopez">
+              <div class="img-1"></div>
               <div class="card-body">
                 <h5 class="card-title">Pedro Lopez</h5>
                 <p class="card-text">CEO - 35 años de experiencia</p>
@@ -215,7 +209,7 @@
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="img/equipo/2.jpg" class="card-img-top" alt="Lorenzo Manto">
+              <div class="img-2"></div>
               <div class="card-body">
                 <h5 class="card-title">Lorenzo Manto</h5>
                 <p class="card-text">Senior Dev - 12 años de experiencia</p>
@@ -224,19 +218,19 @@
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="img/equipo/4.jpg" class="card-img-top" alt="Julia Morato">
+              <div class="img-3"></div>
               <div class="card-body">
-                <h5 class="card-title">Julia Morato</h5>
-                <p class="card-text">Marketing - 15 años de experiencia</p>
+                <h5 class="card-title">Gordon Freeman</h5>
+                <p class="card-text">Científico - 8 años de experiencia</p>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="img/equipo/3.jpg" class="card-img-top" alt="Gordon Freeman">
+              <div class="img-4"></div>
               <div class="card-body">
-                <h5 class="card-title">Gordon Freeman</h5>
-                <p class="card-text">Científico - 8 años de experiencia</p>
+                <h5 class="card-title">Julia Morato</h5>
+                <p class="card-text">Marketing - 15 años de experiencia</p>
               </div>
             </div>
           </div>
@@ -250,13 +244,13 @@
   <!-- Inicio footer -->
   <footer class="footer">
     <div class="footer__derecha wow fadeInRight">
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#" class="icon-facebook"><i class="fa fa-facebook"></i></a>
+      <a href="#" class="icon-twitter"><i class="fa fa-twitter"></i></a>
+      <a href="#" class="icon-instagram"><i class="fa fa-instagram"></i></a>
       <p>&copy; 2021 - Desarrollada por Damián Cabrio</p>
     </div>
     <div class="footer__izquierda wow fadeInLeft">
-      <p>Suscribite a nuesta newsletter</p>
+      <p>Suscribite a nuestra newsletter</p>
       <form action="#">
         <input type="text" class="footer__news-letter-input" />
         <button class="footer__button-news-letter">Enviar</button>
