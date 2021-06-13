@@ -13,30 +13,23 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://patagonic.site/experiencia.html</loc>
+  <loc>https://patagonic.site/experiencia</loc>
   <lastmod>2021-06-13T18:53:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://patagonic.site/idea.html</loc>
+  <loc>https://patagonic.site/idea</loc>
   <lastmod>2021-06-13T18:53:06+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://patagonic.site/blog.html</loc>
+  <loc>https://patagonic.site/blog</loc>
   <lastmod>2021-06-13T18:53:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://patagonic.site/contacto.html</loc>
+  <loc>https://patagonic.site/contacto</loc>
   <lastmod>2021-06-13T18:53:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-<url>
-  <loc>https://patagonic.site/index.html</loc>
-  <lastmod>2021-06-13T18:53:06+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
 </urlset>
