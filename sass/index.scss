@@ -19,7 +19,15 @@
     margin: 15px;
     text-align: center;
     font-size: 1em;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+
+    p {
+      text-align: justify;
+    }
+  }
+
+  &.last-div {
+    margin-bottom: 75px;
   }
 }
 

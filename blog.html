@@ -6,6 +6,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <meta name="keywords"
+    content="Emprender, empresa, desarrollo, dinero, ideas, innovar, blog, novedades, noticias, nuevo" />
+  <meta name="description"
+    content="Enterate de lo ultimo en el mundo del emprendimiento y adelantate a los demás, con el blog de Patagonic" />
+  <meta name="author" content="Damián Andrés Cabrio" />
+
+  <meta property="og:title" content="Blog | Patagonic" />
+  <meta property="og:description"
+    content="Enterate de lo ultimo en el mundo del emprendimiento y adelantate a los demás, con el blog de Patagonic" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://patagonic.site/blog.html" />
+  <meta property="og:image" content="https://patagonic.site/img/og/blog.jpg" />
+  <meta property="og:image:alt" content="Encabezado de inicio" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:site_name" content="Patagonic" />
+
+  <title>Blog | Patagonic</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
   <!-- normalize.css -->
   <link href="https://unpkg.com/@csstools/normalize.css/evergreen.css" rel="stylesheet" />
   <!-- font-awesome -->
@@ -37,14 +60,13 @@
     new WOW().init();
   </script>
 
-  <title>Patagonic - Blog</title>
 </head>
 
 <body>
   <!-- Inicio Navbar -->
   <section id="nav-section">
     <nav class="container navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#">Patagonic</a>
+      <a class="navbar-brand" href="#" tabindex="0">Patagonic</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar la navegación">
         <span class="navbar-toggler-icon"></span>
@@ -52,19 +74,19 @@
       <div class="nav-elements collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav text-center ms-auto">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+            <a class="nav-link" href="index.html" tabindex="1">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="experiencia.html">Experiencia</a>
+            <a class="nav-link" href="experiencia.html" tabindex="2">Experiencia</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="idea.html">Generador de ideas</a>
+            <a class="nav-link" href="idea.html" tabindex="3">Generador de ideas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Blog</a>
+            <a class="nav-link active" aria-current="page" href="#" tabindex="4">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contacto</a>
+            <a class="nav-link" href="contacto.html" tabindex="5">Contacto</a>
           </li>
         </ul>
       </div>
@@ -75,11 +97,11 @@
   <!-- Inicio Secciones Main -->
   <main>
     <!-- Inicio Hero -->
-    <section>
+    <section tabindex="6">
       <div class="hero__imagen hero">
         <div class="hero__texto wow fadeIn" data-wow-duration="1.5s">
-          <h1>Enterate de lo ultimo</h1>
-          <p>Adelántate a los demás</p>
+          <h1 tabindex="7">Enterate de lo ultimo</h1>
+          <h2 tabindex="8">Adelántate a los demás</h2>
         </div>
       </div>
     </section>
@@ -87,12 +109,12 @@
 
     <!-- Inicio Sección blog -->
     <section class="columna">
-      <div class="grid columna__tarjeta wow fadeInUp">
+      <div class="grid columna__tarjeta wow fadeInUp" tabindex="9">
         <div class="grid__titulo">
-          <h2>TITULO <span class="badge badge-pill bg-primary">Nuevo</span></h2>
-          <h5>Descripción, Dec 7, 2020</h5>
+          <h2 tabindex="10">TITULO <span class="badge badge-pill bg-primary">Nuevo</span></h2>
+          <h5 tabindex="11">Descripción, Dec 7, 2020</h5>
         </div>
-        <div class="grid__texto">
+        <div class="grid__texto" tabindex="12">
           <p>Texto..</p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quam
@@ -106,15 +128,15 @@
           </p>
         </div>
         <div class="grid__imagen">
-          <img src="/img/placeholder-images-image_large.png" alt="placeholder" class="grid__imagen--img" />
+          <img src="/img/blog-placeholder.jpg" alt="placeholder" class="grid__imagen--img" tabindex="13" />
         </div>
       </div>
-      <div class="grid columna__tarjeta wow fadeInUp">
+      <div class="grid columna__tarjeta wow fadeInUp" tabindex="14">
         <div class="grid__titulo">
-          <h2>TITULO</h2>
-          <h5>Descripción, Dec 7, 2020</h5>
+          <h2 tabindex="15">TITULO</h2>
+          <h5 tabindex="16">Descripción, Dec 7, 2020</h5>
         </div>
-        <div class="grid__texto">
+        <div class="grid__texto" tabindex="17">
           <p>Texto..</p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quam
@@ -128,18 +150,18 @@
           </p>
         </div>
         <div class="grid__imagen">
-          <img src="/img/placeholder-images-image_large.png" alt="placeholder" class="grid__imagen--img" />
+          <img src="/img/blog-placeholder.jpg" alt="placeholder" class="grid__imagen--img" tabindex="18" />
         </div>
       </div>
       <div class="paginacion">
-        <a href="#">&laquo;</a>
-        <a href="#" class="paginacion--activo">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">6</a>
-        <a href="#">&raquo;</a>
+        <a href="#" tabindex="19">&laquo;</a>
+        <a href="#" class="paginacion--activo" tabindex="20">1</a>
+        <a href="#" tabindex="21">2</a>
+        <a href="#" tabindex="22">3</a>
+        <a href="#" tabindex="23">4</a>
+        <a href="#" tabindex="24">5</a>
+        <a href="#" tabindex="25">6</a>
+        <a href="#" tabindex="26">&raquo;</a>
       </div>
     </section>
     <!-- Fin Sección blog -->
@@ -147,18 +169,18 @@
   <!-- Fin Secciones Main -->
 
   <!-- Inicio footer -->
-  <footer class="footer">
+  <footer class="footer" tabindex="27">
     <div class="footer__derecha wow fadeInRight">
-      <a href="#" class="icon-facebook"><i class="fa fa-facebook"></i></a>
-      <a href="#" class="icon-twitter"><i class="fa fa-twitter"></i></a>
-      <a href="#" class="icon-instagram"><i class="fa fa-instagram"></i></a>
-      <p>&copy; 2021 - Desarrollada por Damián Cabrio</p>
+      <a href="#" class="icon-facebook" tabindex="31"><i class="fa fa-facebook"></i></a>
+      <a href="#" class="icon-twitter" tabindex="32"><i class="fa fa-twitter"></i></a>
+      <a href="#" class="icon-instagram" tabindex="33"><i class="fa fa-instagram"></i></a>
+      <p tabindex="34">&copy; 2021 - Desarrollada por Damián Cabrio</p>
     </div>
     <div class="footer__izquierda wow fadeInLeft">
-      <p>Suscribite a nuestra newsletter</p>
+      <p tabindex="28">Suscribite a nuestra newsletter</p>
       <form action="#">
-        <input type="text" class="footer__news-letter-input" />
-        <button class="footer__button-news-letter">Enviar</button>
+        <input type="text" class="footer__news-letter-input" tabindex="29" />
+        <button class="footer__button-news-letter" tabindex="30">Enviar</button>
       </form>
     </div>
   </footer>
