@@ -6,6 +6,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <meta name="keywords"
+    content="Emprender, empresa, desarrollo, dinero, ideas, innovar, experiencia, trabajos, equipo" />
+  <meta name="description"
+    content="Nuestro equipo en Patagonic, y una muestra de nuestra basta experiencia a través de los años" />
+  <meta name="author" content="Damián Andrés Cabrio" />
+
+  <meta property="og:title" content="Experiencia | Patagonic" />
+  <meta property="og:description"
+    content="Nuestro equipo en Patagonic, y una muestra de nuestra basta experiencia a través de los años" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://patagonic.site/experiencia.html" />
+  <meta property="og:image" content="https://patagonic.site/img/og/experiencia.jpg" />
+  <meta property="og:image:alt" content="Encabezado de inicio" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:site_name" content="Patagonic" />
+
+
+  <title>Experiencia | Patagonic</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
   <!-- normalize.css -->
   <link href="https://unpkg.com/@csstools/normalize.css/evergreen.css" rel="stylesheet" />
   <!-- font-awesome -->
@@ -37,14 +61,13 @@
     new WOW().init();
   </script>
 
-  <title>Patagonic - Experiencia</title>
 </head>
 
 <body>
   <!-- Inicio Navbar -->
   <section id="nav-section">
     <nav class="container navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#">Patagonic</a>
+      <a class="navbar-brand" href="#" tabindex="0">Patagonic</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar la navegación">
         <span class="navbar-toggler-icon"></span>
@@ -52,19 +75,19 @@
       <div class="nav-elements collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav text-center ms-auto">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+            <a class="nav-link" href="index.html" tabindex="1">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Experiencia</a>
+            <a class="nav-link active" aria-current="page" href="#" tabindex="2">Experiencia</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="idea.html">Generador de ideas</a>
+            <a class="nav-link" href="idea.html" tabindex="3">Generador de ideas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="blog.html">Blog</a>
+            <a class="nav-link" href="blog.html" tabindex="4">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contacto</a>
+            <a class="nav-link" href="contacto.html" tabindex="5">Contacto</a>
           </li>
         </ul>
       </div>
@@ -75,23 +98,23 @@
   <!-- Inicio Secciones Main -->
   <main>
     <!-- Inicio Hero -->
-    <section>
+    <section tabindex="6">
       <div class="hero__imagen hero">
         <div class="hero__texto wow fadeIn" data-wow-duration="1.5s">
-          <h1>Hemos trabajado mucho</h1>
-          <p>Vos podes ser el siguiente</p>
+          <h1 tabindex="7">Hemos trabajado mucho</h1>
+          <h2 tabindex="8">Vos podes ser el siguiente</h2>
         </div>
       </div>
     </section>
     <!-- Fin Hero -->
 
     <!-- Inicio Nuestra experiencia -->
-    <section id="experiencia" class="experiencia">
-      <h3 class="section__titulos">Nuestra experiencia</h3>
+    <section id="experiencia" class="experiencia wow fadeInUp" tabindex="9">
+      <h3 class="section__titulos" tabindex="10">Nuestra experiencia</h3>
       <hr />
       <table class="experiencia__tabla">
         <thead>
-          <tr>
+          <tr tabindex="11">
             <th scope="col">Empresa</th>
             <th scope="col">Año</th>
             <th scope="col">Cant. Visitas</th>
@@ -100,48 +123,51 @@
         </thead>
         <tfoot>
           <tr>
-            <td colspan="7"><button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#ver-mas">Ver
-                mas</button></td>
+            <td colspan="19">
+              <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#ver-mas" tabindex="16">
+                Ver mas
+              </button>
+            </td>
           </tr>
         </tfoot>
         <tbody>
-          <tr>
+          <tr tabindex="12">
             <th scope="row">Disney</th>
             <td data-title="Año">2015</td>
             <td data-title="Visitas">12000</td>
             <td data-title="Visitar"><a href="">Ver</a></td>
           </tr>
-          <tr>
+          <tr tabindex="13">
             <th scope="row">Marvel</th>
             <td data-title="Año">2019</td>
             <td data-title="Visitas">120000</td>
             <td data-title="Visitar"><a href="">Ver</a></td>
           </tr>
-          <tr>
+          <tr tabindex="14">
             <th scope="row">Mcdonalds</th>
             <td data-title="Año">2015</td>
             <td data-title="Visitas">12000</td>
             <td data-title="Visitar"><a href="">Ver</a></td>
           </tr>
-          <tr>
+          <tr tabindex="15">
             <th scope="row">Sony</th>
             <td data-title="Año">2015</td>
             <td data-title="Visitas">12000</td>
             <td data-title="Visitar"><a href="">Ver</a></td>
           </tr>
-          <tr>
+          <tr tabindex="16">
             <th scope="row">Adidas</th>
             <td data-title="Año">2015</td>
             <td data-title="Visitas">12000</td>
             <td data-title="Visitar"><a href="">Ver</a></td>
           </tr>
-          <tr>
+          <tr tabindex="17">
             <th scope="row">Netflix</th>
             <td data-title="Año">2015</td>
             <td data-title="Visitas">12000</td>
             <td data-title="Visitar"><a href="">Ver</a></td>
           </tr>
-          <tr>
+          <tr tabindex="18">
             <th scope="row">Disney</th>
             <td data-title="Año">2015</td>
             <td data-title="Visitas">12000</td>
@@ -193,15 +219,15 @@
     <!-- Fin Nuestra experiencia -->
 
     <!-- Inicio Nuestro equipo -->
-    <section id="equipo" class="equipo">
-      <h3 class="section__titulos">El equipo</h3>
+    <section id="equipo" class="equipo wow fadeInUp" tabindex="20">
+      <h3 class="section__titulos" tabindex="21">El equipo</h3>
       <hr />
       <div class="equipo__contenedor">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100">
               <div class="img-1"></div>
-              <div class="card-body">
+              <div class="card-body" tabindex="22">
                 <h5 class="card-title">Pedro Lopez</h5>
                 <p class="card-text">CEO - 35 años de experiencia</p>
               </div>
@@ -210,7 +236,7 @@
           <div class="col">
             <div class="card h-100">
               <div class="img-2"></div>
-              <div class="card-body">
+              <div class="card-body" tabindex="23">
                 <h5 class="card-title">Lorenzo Manto</h5>
                 <p class="card-text">Senior Dev - 12 años de experiencia</p>
               </div>
@@ -219,7 +245,7 @@
           <div class="col">
             <div class="card h-100">
               <div class="img-3"></div>
-              <div class="card-body">
+              <div class="card-body" tabindex="24">
                 <h5 class="card-title">Gordon Freeman</h5>
                 <p class="card-text">Científico - 8 años de experiencia</p>
               </div>
@@ -228,7 +254,7 @@
           <div class="col">
             <div class="card h-100">
               <div class="img-4"></div>
-              <div class="card-body">
+              <div class="card-body" tabindex="25">
                 <h5 class="card-title">Julia Morato</h5>
                 <p class="card-text">Marketing - 15 años de experiencia</p>
               </div>
@@ -242,18 +268,18 @@
   <!-- Fin Secciones Main -->
 
   <!-- Inicio footer -->
-  <footer class="footer">
+  <footer class="footer" tabindex="26">
     <div class="footer__derecha wow fadeInRight">
-      <a href="#" class="icon-facebook"><i class="fa fa-facebook"></i></a>
-      <a href="#" class="icon-twitter"><i class="fa fa-twitter"></i></a>
-      <a href="#" class="icon-instagram"><i class="fa fa-instagram"></i></a>
-      <p>&copy; 2021 - Desarrollada por Damián Cabrio</p>
+      <a href="#" class="icon-facebook" tabindex="30"><i class="fa fa-facebook"></i></a>
+      <a href="#" class="icon-twitter" tabindex="31"><i class="fa fa-twitter"></i></a>
+      <a href="#" class="icon-instagram" tabindex="32"><i class="fa fa-instagram"></i></a>
+      <p tabindex="33">&copy; 2021 - Desarrollada por Damián Cabrio</p>
     </div>
     <div class="footer__izquierda wow fadeInLeft">
-      <p>Suscribite a nuestra newsletter</p>
+      <p tabindex="27">Suscribite a nuestra newsletter</p>
       <form action="#">
-        <input type="text" class="footer__news-letter-input" />
-        <button class="footer__button-news-letter">Enviar</button>
+        <input type="text" class="footer__news-letter-input" tabindex="28" />
+        <button class="footer__button-news-letter" tabindex="29">Enviar</button>
       </form>
     </div>
   </footer>
