@@ -1,13 +1,19 @@
+/* Colores del sitio */
 $color-green: #4caf50;
 $color-green-hover: #45a049;
 $color-blue: #367dcf;
 $color-blue-hover: #1d4d85;
 
-/* base.scss */
+/* Colores redes sociales */
 $redes-sociales: (
   "facebook": #3b5998,
   "twitter": #1da1f2,
   "instagram": #e1306c,
 );
 
+/* Suplemento al margen superior de los títulos de las secciones */
 $margin-superior-titulo: 10;
+
+/* Define la cantidad de imágenes de trabajos y equipo en experiencia.scss */
+$cantidad-img-equipo: 4;
+$cantidad-img-trabajos: 3;

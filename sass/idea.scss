@@ -18,6 +18,10 @@
   max-width: 600px;
   margin: auto;
   text-align: justify;
+
+  & p {
+    padding: 10px;
+  }
 }
 
 /* Estilos del contenedor del las secciones */

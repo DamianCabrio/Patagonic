@@ -1,2 +1,2 @@
 .hero__imagen{background-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0.5))),url("../img/contacto.jpg");background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../img/contacto.jpg")}.contacto{border-radius:5px;padding:20px;max-width:750px;margin:auto}.contacto__boton--submit{background-color:#4caf50;-webkit-transition:background-color 0.2s;transition:background-color 0.2s}.contacto__boton--submit:hover{background-color:#45a049}.contacto__boton--reset{background-color:#367dcf;-webkit-transition:background-color 0.2s;transition:background-color 0.2s}.contacto__boton--reset:hover{background-color:#1d4d85}
-/*# sourceMappingURL=contacto.min.css.map */
+/*# sourceMappingURL=contactanos.min.css.map */

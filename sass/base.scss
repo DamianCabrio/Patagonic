@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap");
 @import "partials/variables";
+@import "partials/mixins";
 
 /* Estilos generales inicio */
 /* Le dan al body y html el 100% del alto disponible */
@@ -195,11 +196,7 @@ a {
     -webkit-transform: scale(1.1);
   }
 
-  @each $red, $color in $redes-sociales {
-    .icon-#{$red}:hover {
-      background-color: $color;
-    }
-  }
+  @include hover-redes();
 }
 
 /* Permite que el footer sea responsive, posiciona los dos elementos del footer de forma vertical */

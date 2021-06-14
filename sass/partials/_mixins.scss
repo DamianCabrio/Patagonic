@@ -1,0 +1,13 @@
+@mixin hover-redes($redes: $redes-sociales) {
+  @each $red, $color in $redes {
+    .icon-#{$red}:hover {
+      background-color: $color;
+    }
+  }
+}
+
+@mixin bg-img($path, $height) {
+  background: url(#{$path});
+  background-size: cover;
+  height: $height;
+}
