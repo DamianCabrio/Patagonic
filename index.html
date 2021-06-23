@@ -28,162 +28,171 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 
-  <!-- normalize.css -->
-  <link href="https://unpkg.com/@csstools/normalize.css/evergreen.css" rel="stylesheet" />
-  <!-- font-awesome -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
-
-  <!-- wow.js y su dependencia animate.css -->
+  <!-- animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-    crossorigin="anonymous"></script>
-
-  <!-- Estilos base -->
-  <link rel="stylesheet" href="css/base.min.css" />
-  <!-- Estilos index -->
-  <link rel="stylesheet" href="css/index.min.css" />
-
-  <script>
-    new WOW().init();
-  </script>
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/style.min.css">
 
 </head>
 
 <body>
-  <!-- Inicio Navbar -->
-  <section id="nav-section">
-    <nav class="container navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="/" tabindex="0">Patagonic</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar la navegación">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="nav-elements collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav text-center ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" tabindex="1">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="experiencia.html" tabindex="2">Experiencia</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="idea.html" tabindex="3">Generador de ideas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="blog.html" tabindex="4">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contactanos.html" tabindex="5">Contáctanos</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </section>
-  <!-- Fin Navbar -->
-
-  <!-- Inicio Secciones Main -->
-  <main>
-    <!-- Inicio Hero -->
-    <section tabindex="6">
-      <div class="hero__imagen hero">
-        <div class="hero__texto wow fadeIn" data-wow-duration="1.5s">
-          <h1 tabindex="7">Bienvenido a Patagonic</h1>
-          <h2 tabindex="8">Haz tus sueños realidad</h2>
-        </div>
-      </div>
+  <div id="page-container">
+    <!-- Inicio Navbar -->
+    <section id="nav-section">
+      <nav class="navbar fixed-top navbar-expand-lg bg-light navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="/" tabindex="0">Patagonic</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar la navegación">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="nav-elements collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav text-center ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" tabindex="0">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="experiencia.html" tabindex="0">Experiencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="idea.html" tabindex="0">Generador de ideas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html" tabindex="0">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactanos.html" tabindex="0">Contáctanos</a>
+              </li>
+            </ul>
+          </div>
+      </nav>
     </section>
-    <!-- Fin Hero -->
+    <!-- Fin Navbar -->
 
-    <!-- Inicio Nuestro objetivo -->
-    <section class="section wow fadeInUp" tabindex="9">
-      <h3 class="section__titulos" tabindex="10">Nuestro objetivo</h3>
-      <hr />
-      <div class="section__contenedor">
-        <div>
-          <div class="seccion__img">
-            <img src="img/placeholder-img.jpg" alt="Nuestros Objetivos" width="350px" class="alinear-img-centro"
-              tabindex="11" />
-            <div class="seccion__descripcion-img">
-              <div class="seccion__descripcion-img--texto">
-                Imagen sobre nuestros objetivos
+    <!-- Inicio Scroll to top botón -->
+    <a href="#page-container">
+      <div class="top-btn">
+        <img src="img/iconos/caret-up-fill.svg" alt="Flecha hacia arriba">
+      </div>
+    </a>
+    <!-- Fin Scroll to top botón -->
+
+    <!-- Inicio Secciones Main -->
+    <main>
+      <!-- Inicio Hero -->
+      <section tabindex="0">
+        <div class="hero__imagen hero__imagen--index hero">
+          <div class="hero__texto wow fadeIn" data-wow-duration="1.5s">
+            <h1 tabindex="0">Bienvenido a Patagonic</h1>
+            <h2 tabindex="0">Haz tus sueños realidad</h2>
+          </div>
+        </div>
+      </section>
+      <!-- Fin Hero -->
+
+      <!-- Inicio Nuestro objetivo -->
+      <section class="section wow fadeInUp" tabindex="0">
+        <h3 class="section__titulos" tabindex="0">Nuestro objetivo</h3>
+        <hr />
+        <div class="section__contenedor">
+          <div>
+            <div class="seccion__img">
+              <img src="img/index/seminario.jpg" alt="Nuestros Objetivos" width="350px"
+                class="alinear-img-centro sombra bordes-redondeados img-fluid" tabindex="0" />
+              <div class="seccion__descripcion-img bordes-redondeados">
+                <div class="seccion__descripcion-img--texto">
+                  Seminario Patagonic 2017
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p tabindex="0">
+              <strong>En Patagonic</strong> nos encargamos de tomar tus ideas, y las hacemos realidad, asi de simple.
+              ¿Todavía no se te ocurre esa idea millonaria que tanto estas buscando? Patagonic organiza seminarios,
+              charlas y muchos otros eventos de manera frecuenta, a los que asisten milles de personas como vos, por lo
+              que vas a conocer y conectar con tus próximos posibles <em>inversores y clientes</em>, ademas de
+              papelistas
+              expertos en el rubro, que te darán el conocimiento necesario para que tu empresa triunfe. En resumen, el
+              objetivo de <strong>Patagonic</strong> es hacer que vos crezcas y te desarrolles, <br>¿Estas listo para
+              empezar?
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Fin Nuestro objetivo -->
+
+      <!-- Inicio Sobre nosotros -->
+      <section class="section wow fadeInUp" tabindex="0">
+        <h3 class="section__titulos" tabindex="0">Sobre Nosotros</h3>
+        <hr />
+        <div class="section__contenedor last-div">
+          <div>
+            <p tabindex="0">
+              <strong>Patagonic</strong> es una empresa fundada en el año 2012 por personas como vos, que querían
+              empezar
+              un emprendimiento, pero no sabían como, y la información disponible no nos satisfacía.
+              Es por esto que creamos Patagonic, para poder llevarle información de calidad a cualquier futuro
+              emprendedor, <em> sin ningún tipo de contratos ocultos o tarifas millonarias</em>. En Patagonic, lo mas
+              importante es tu empresa, <strong>siempre</strong>.
+            </p>
+          </div>
+          <div>
+            <div class="seccion__img">
+              <img src="img/index/fundadores.png" alt="Sobre Nosotros" width="400px"
+                class="alinear-img-centro sombra img-fluid" tabindex="0" />
+              <div class="seccion__descripcion-img bordes-redondeados">
+                <div class="seccion__descripcion-img--texto">
+                  Fundadores de Patagonic
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div>
-          <p tabindex="12">
-            <strong>En Patagonic</strong> nos encargamos de tomar tus ideas, y las hacemos realidad, asi de simple.
-            ¿Todavía no se te ocurre esa idea millonaria que tanto estas buscando? Patagonic organiza seminarios,
-            charlas y muchos otros eventos de manera frecuenta, a los que asisten milles de personas como vos, por lo
-            que vas a conocer y conectar con tus próximos posibles <em>inversores y clientes</em>, ademas de papelistas
-            expertos en el rubro, que te darán el conocimiento necesario para que tu empresa triunfe. En resumen, el
-            objetivo de <strong>Patagonic</strong> es hacer que vos crezcas y te desarrolles, <br>¿Estas listo para
-            empezar?
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- Fin Nuestro objetivo -->
-
-    <!-- Inicio Sobre nosotros -->
-    <section class="section wow fadeInUp" tabindex="13">
-      <h3 class="section__titulos" tabindex="14">Sobre Nosotros</h3>
-      <hr />
-      <div class="section__contenedor last-div">
-        <div>
-          <p tabindex="15">
-            <strong>Patagonic</strong> es una empresa fundada en el año 2012 por personas como vos, que querían empezar
-            un emprendimiento, pero no sabían como, y la información disponible no nos satisfacía.
-            Es por esto que creamos Patagonic, para poder llevarle información de calidad a cualquier futuro
-            emprendedor, <em> sin ningún tipo de contratos ocultos o tarifas millonarias</em>. En Patagonic, lo mas
-            importante es tu empresa, <strong>siempre</strong>.
-          </p>
-        </div>
-        <div>
-          <div class="seccion__img">
-            <img src="img/nosotros.jpg" alt="Sobre Nosotros" width="400px" class="alinear-img-centro" tabindex="16" />
-            <div class="seccion__descripcion-img">
-              <div class="seccion__descripcion-img--texto">
-                Imagen sobre nosotros
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Fin Sobre nosotros -->
-  </main>
-  <!-- Fin Secciones Main -->
+      </section>
+      <!-- Fin Sobre nosotros -->
+    </main>
+    <!-- Fin Secciones Main -->
+  </div>
 
   <!-- Inicio footer -->
-  <footer class="footer" tabindex="17">
-    <div class="footer__derecha wow fadeInRight">
-      <a href="#" class="icon-facebook" tabindex="21"><i class="fa fa-facebook"></i></a>
-      <a href="#" class="icon-twitter" tabindex="22"><i class="fa fa-twitter"></i></a>
-      <a href="#" class="icon-instagram" tabindex="23"><i class="fa fa-instagram"></i></a>
-      <p tabindex="24">&copy; 2021 - Desarrollada por Damián Cabrio</p>
-    </div>
+  <footer class="footer" tabindex="0">
     <div class="footer__izquierda wow fadeInLeft">
-      <p tabindex="18">Suscribite a nuestra newsletter</p>
-      <form action="#">
-        <input type="text" class="footer__news-letter-input" tabindex="19" />
-        <button class="footer__button-news-letter" tabindex="20">Enviar</button>
+      <p tabindex="0">Suscribite a nuestra newsletter</p>
+      <form action="#" class="d-flex flex-wrap justify-content-center align-items-baseline">
+        <input type="text" class="footer__news-letter-input" tabindex="0" required />
+        <button class="footer__button-news-letter" tabindex="0">Enviar</button>
       </form>
+    </div>
+    <div class="footer__derecha wow fadeInRight">
+      <a href="https://facebook.com.ar" class="icon-facebook" target="_blank" tabindex="0" rel="noreferrer"><img
+          src="img/iconos/facebook.svg" alt="Facebook"></a>
+      <a href="https://twitter.com.ar" class="icon-twitter" target="_blank" tabindex="0" rel="noreferrer"><img
+          src="img/iconos/twitter.svg" alt="Twitter"></a>
+      <a href="https://instagram.com.ar" class="icon-instagram" target="_blank" target="_blank" tabindex="0"
+        rel="noreferrer"><img src="img/iconos/instagram.svg" alt="Instagram"></a>
+      <p tabindex="0">&copy; 2021 - Desarrollada por Damián Cabrio</p>
     </div>
   </footer>
   <!-- Fin footer -->
+
+
+
+  <!-- WOW js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    new WOW().init();
+  </script>
 
   <script>
     //Este Javascript permite hacer un fade out de las descripciones de las imágenes

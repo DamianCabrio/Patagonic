@@ -29,150 +29,168 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 
-  <!-- normalize.css -->
-  <link href="https://unpkg.com/@csstools/normalize.css/evergreen.css" rel="stylesheet" />
-  <!-- font-awesome -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
-
-  <!-- wow.js y su dependencia animate.css -->
+  <!-- animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-    crossorigin="anonymous"></script>
-
-  <!-- Estilos base -->
-  <link rel="stylesheet" href="css/base.min.css" />
-  <!-- Estilos index -->
-  <link rel="stylesheet" href="css/contactanos.min.css" />
-
-  <script>
-    new WOW().init();
-  </script>
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/style.min.css">
 
 </head>
 
 <body>
-  <!-- Inicio Navbar -->
-  <section id="nav-section">
-    <nav class="container navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="/" tabindex="0">Patagonic</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar la navegación">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="nav-elements collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav text-center ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/" tabindex="1">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="experiencia.html" tabindex="2">Experiencia</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="idea.html" tabindex="3">Generador de ideas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="blog.html" tabindex="4">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" tabindex="5">Contáctanos</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </section>
-  <!-- Fin Navbar -->
-
-  <!-- Inicio Secciones Main -->
-  <main>
-    <!-- Inicio Hero -->
-    <section tabindex="6">
-      <div class="hero__imagen hero">
-        <div class="hero__texto wow fadeIn" data-wow-duration="1.5s">
-          <h1 tabindex="7">Ponte en contacto</h1>
-          <h2 tabindex="8">Juntos podemos hacer cualquier cosa</h2>
+  <div id="page-container">
+    <!-- Inicio Navbar -->
+    <section id="nav-section">
+      <nav class="navbar fixed-top navbar-expand-lg bg-light navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="/" tabindex="0">Patagonic</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar la navegación">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="nav-elements collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav text-center ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/" tabindex="0">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="experiencia.html" tabindex="0">Experiencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="idea.html" tabindex="0">Generador de ideas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html" tabindex="0">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" tabindex="0">Contáctanos</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </nav>
     </section>
-    <!-- Fin Hero -->
+    <!-- Fin Navbar -->
 
-    <!-- Inicio sección contacto -->
-    <section class="contacto wow fadeInUp" data-wow-duration="1.5s">
-      <h3 class="section__titulos" tabindex="9">Contáctanos</h3>
-      <hr />
-      <div class="alert alert-success fade show d-none" role="alert" id="alert-success">
-        ¡Su mensaje se envió con éxito!
+    <!-- Inicio Scroll to top botón -->
+    <a href="#page-container">
+      <div class="top-btn">
+        <img src="img/iconos/caret-up-fill.svg" alt="Flecha hacia arriba">
       </div>
-      <div class="alert alert-danger fade show d-none" role="alert" id="alert-danger">
-        Error al enviar el mensaje, vuelva a intentar.
-      </div>
-      <form>
-        <div class="mb-3">
-          <label for="nombre" class="form-label" tabindex="10">Nombre</label>
-          <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre..." tabindex="11" />
+    </a>
+    <!-- Fin Scroll to top botón -->
+
+    <!-- Inicio Secciones Main -->
+    <main>
+      <!-- Inicio Hero -->
+      <section tabindex="0">
+        <div class="hero__imagen hero__imagen--contactanos hero">
+          <div class="hero__texto wow fadeIn" data-wow-duration="1.5s">
+            <h1 tabindex="0">Ponte en contacto</h1>
+            <h2 tabindex="0">Juntos podemos hacer cualquier cosa</h2>
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="apellido" class="form-label" tabindex="12">Apellido</label>
-          <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Tu apellido..."
-            tabindex="13" />
+      </section>
+      <!-- Fin Hero -->
+
+      <!-- Inicio sección contacto -->
+      <section class="contacto wow fadeInUp" data-wow-duration="1.5s">
+        <h3 class="section__titulos" tabindex="0">Contáctanos</h3>
+        <hr />
+        <div class="alert alert-success fade show d-none" role="alert" id="alert-success">
+          ¡Su mensaje se envió con éxito!
         </div>
-        <div class="mb-3">
-          <label for="pais" class="form-label" tabindex="14">País</label>
-          <select class="form-select" aria-label="Argentina" id="pais" tabindex="15">
-            <option value="argentina" selected>Argentina</option>
-            <option value="bolivia">Bolivia</option>
-            <option value="brasil">Brasil</option>
-            <option value="otro">Otro</option>
-          </select>
+        <div class="alert alert-danger fade show d-none" role="alert" id="alert-danger">
+          Error al enviar el mensaje, vuelva a intentar.
         </div>
-        <div class="mb-3">
-          <label for="mensaje" class="form-label" tabindex="16">Mensaje</label>
-          <textarea class="form-control" id="mensaje" rows="3" tabindex="17"></textarea>
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="terminos" tabindex="19" />
-          <label class="form-check-label" for="terminos" tabindex="18">¿Acepta los términos y condiciones?</label>
-        </div>
-        <button type="button" class="btn contacto__boton--submit text-white" id="submit-button" tabindex="20">
-          Enviar
-        </button>
-        <button type="reset" class="btn contacto__boton--reset text-white" tabindex="21">
-          Restablecer
-        </button>
-      </form>
-    </section>
-    <!-- Fin sección contacto -->
-  </main>
-  <!-- Fin Secciones Main -->
+        <form onsubmit="alert(); return false">
+          <div class="mb-3">
+            <label for="nombre" class="form-label" tabindex="0">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre..." tabindex="0"
+              required />
+          </div>
+          <div class="mb-3">
+            <label for="apellido" class="form-label" tabindex="0">Apellido</label>
+            <input class="form-control" type="text" id="apellido" name="apellido" placeholder="Tu apellido..."
+              tabindex="0" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label" tabindex="0">Email</label>
+            <input class="form-control" type="email" id="email" name="email" placeholder="Tu email..." tabindex="0"
+              required />
+          </div>
+          <div class="mb-3">
+            <label for="pais" class="form-label" tabindex="0">País</label>
+            <select class="form-select" aria-label="Argentina" id="pais" tabindex="0" required>
+              <option value="argentina" selected>Argentina</option>
+              <option value="bolivia">Bolivia</option>
+              <option value="brasil">Brasil</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label" tabindex="0">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="3" tabindex="0" required></textarea>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="terminos" tabindex="0" required />
+            <label class="form-check-label" for="terminos" tabindex="0">¿Acepta los términos y condiciones?</label>
+          </div>
+          <button type="submit" class="btn contacto__boton--submit text-white" id="submit-button" tabindex="0">
+            Enviar
+          </button>
+          <button type="reset" class="btn contacto__boton--reset text-white" tabindex="0">
+            Restablecer
+          </button>
+        </form>
+      </section>
+      <!-- Fin sección contacto -->
+    </main>
+    <!-- Fin Secciones Main -->
+  </div>
 
   <!-- Inicio footer -->
-  <footer class="footer" tabindex="22">
-    <div class="footer__derecha wow fadeInRight">
-      <a href="#" class="icon-facebook" tabindex="26"><i class="fa fa-facebook"></i></a>
-      <a href="#" class="icon-twitter" tabindex="27"><i class="fa fa-twitter"></i></a>
-      <a href="#" class="icon-instagram" tabindex="28"><i class="fa fa-instagram"></i></a>
-      <p tabindex="29">&copy; 2021 - Desarrollada por Damián Cabrio</p>
-    </div>
+  <footer class="footer" tabindex="0">
     <div class="footer__izquierda wow fadeInLeft">
-      <p tabindex="23">Suscribite a nuestra newsletter</p>
+      <p tabindex="0">Suscribite a nuestra newsletter</p>
       <form action="#">
-        <input type="text" class="footer__news-letter-input" tabindex="24" />
-        <button class="footer__button-news-letter" tabindex="25">Enviar</button>
+        <input type="text" class="footer__news-letter-input" tabindex="0" required />
+        <button class="footer__button-news-letter" tabindex="0">Enviar</button>
       </form>
+    </div>
+    <div class="footer__derecha wow fadeInRight">
+      <a href="https://facebook.com.ar" class="icon-facebook" target="_blank" tabindex="0" rel="noreferrer"><img
+          src="img/iconos/facebook.svg" alt="Facebook"></a>
+      <a href="https://twitter.com.ar" class="icon-twitter" target="_blank" tabindex="0" rel="noreferrer"><img
+          src="img/iconos/twitter.svg" alt="Twitter"></a>
+      <a href="https://instagram.com.ar" class="icon-instagram" target="_blank" target="_blank" tabindex="0"
+        rel="noreferrer"><img src="img/iconos/instagram.svg" alt="Instagram"></a>
+      <p tabindex="0">&copy; 2021 - Desarrollada por Damián Cabrio</p>
     </div>
   </footer>
   <!-- Fin footer -->
+
+
+
+  <!-- Bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"
+    defer></script>
+
+  <!-- WOW js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    new WOW().init();
+  </script>
 
   <script>
     const successAlert = document.getElementById('alert-success');
@@ -180,7 +198,7 @@
     const submitBtn = document.getElementById('submit-button');
     let esError = true;
 
-    submitBtn.addEventListener('click', () => {
+    function alert() {
       esError = !esError;
       submitBtn.disabled = true;
       if (esError) {
@@ -196,7 +214,7 @@
           submitBtn.disabled = false;
         }, 2000)
       }
-    })
+    }
   </script>
 </body>
 

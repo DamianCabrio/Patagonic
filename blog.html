@@ -29,162 +29,175 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 
-  <!-- normalize.css -->
-  <link href="https://unpkg.com/@csstools/normalize.css/evergreen.css" rel="stylesheet" />
-  <!-- font-awesome -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
-
-  <!-- wow.js y su dependencia animate.css -->
+  <!-- animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-    crossorigin="anonymous"></script>
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/style.min.css">
 
-  <!-- Estilos base -->
-  <link rel="stylesheet" href="css/base.min.css" />
-  <!-- Estilos index -->
-  <link rel="stylesheet" href="css/blog.min.css" />
+</head>
+
+<body>
+  <div id="page-container">
+    <!-- Inicio Navbar -->
+    <section id="nav-section">
+      <nav class="navbar fixed-top navbar-expand-lg bg-light navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="/" tabindex="0">Patagonic</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar la navegación">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="nav-elements collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav text-center ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/" tabindex="0">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="experiencia.html" tabindex="0">Experiencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="idea.html" tabindex="0">Generador de ideas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" tabindex="0">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactanos.html" tabindex="0">Contáctanos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- Fin Navbar -->
+
+    <!-- Inicio Scroll to top botón -->
+    <a href="#page-container">
+      <div class="top-btn">
+        <img src="img/iconos/caret-up-fill.svg" alt="Flecha hacia arriba">
+      </div>
+    </a>
+    <!-- Fin Scroll to top botón -->
+
+    <!-- Inicio Secciones Main -->
+    <main>
+      <!-- Inicio Hero -->
+      <section tabindex="0">
+        <div class="hero__imagen hero__imagen--blog hero">
+          <div class="hero__texto wow fadeIn" data-wow-duration="1.5s">
+            <h1 tabindex="0">Enterate de lo ultimo</h1>
+            <h2 tabindex="0">Adelántate a los demás</h2>
+          </div>
+        </div>
+      </section>
+      <!-- Fin Hero -->
+
+      <!-- Inicio Sección blog -->
+      <section class="columna">
+        <div class="grid columna__tarjeta wow fadeInUp" tabindex="0">
+          <div class="grid__titulo">
+            <h2 tabindex="0">TITULO <span class="badge badge-pill bg-primary">Nuevo</span></h2>
+            <h5 tabindex="0">Descripción, Dec 7, 2020</h5>
+          </div>
+          <div class="grid__texto" tabindex="0">
+            <p>Texto..</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quam
+              quis numquam tenetur, iusto delectus commodi minus, cum illum
+              adipisci expedita, ratione fugit rem aliquam reiciendis. Ea quidem
+              deserunt asperiores. Dignissimos, distinctio illum quis molestiae
+              nobis itaque at eum nulla, tempore molestias illo provident
+              quibusdam quasi. Reprehenderit facilis asperiores, consectetur,
+              quasi necessitatibus a tempore laudantium harum iure, ipsum
+              laboriosam veritatis!.
+            </p>
+          </div>
+          <div class="grid__imagen">
+            <img src="/img/blog-placeholder.jpg" alt="placeholder" class="grid__imagen--img" tabindex="0" />
+          </div>
+        </div>
+        <div class="grid columna__tarjeta wow fadeInUp" tabindex="0">
+          <div class="grid__titulo">
+            <h2 tabindex="0">TITULO</h2>
+            <h5 tabindex="0">Descripción, Dec 7, 2020</h5>
+          </div>
+          <div class="grid__texto" tabindex="0">
+            <p>Texto..</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quam
+              quis numquam tenetur, iusto delectus commodi minus, cum illum
+              adipisci expedita, ratione fugit rem aliquam reiciendis. Ea quidem
+              deserunt asperiores. Dignissimos, distinctio illum quis molestiae
+              nobis itaque at eum nulla, tempore molestias illo provident
+              quibusdam quasi. Reprehenderit facilis asperiores, consectetur,
+              quasi necessitatibus a tempore laudantium harum iure, ipsum
+              laboriosam veritatis!.
+            </p>
+          </div>
+          <div class="grid__imagen">
+            <img src="/img/blog-placeholder.jpg" alt="placeholder" class="grid__imagen--img" tabindex="0" />
+          </div>
+        </div>
+        <div class="paginacion">
+          <a href="#" tabindex="0">&laquo;</a>
+          <a href="#" class="paginacion--activo" tabindex="0">1</a>
+          <a href="#" tabindex="0">2</a>
+          <a href="#" tabindex="0">3</a>
+          <a href="#" tabindex="0">4</a>
+          <a href="#" tabindex="0">5</a>
+          <a href="#" tabindex="0">6</a>
+          <a href="#" tabindex="0">&raquo;</a>
+        </div>
+      </section>
+      <!-- Fin Sección blog -->
+    </main>
+    <!-- Fin Secciones Main -->
+  </div>
+
+  <!-- Inicio footer -->
+  <footer class="footer" tabindex="0">
+    <div class="footer__izquierda wow fadeInLeft">
+      <p tabindex="0">Suscribite a nuestra newsletter</p>
+      <form action="#">
+        <input type="text" class="footer__news-letter-input" tabindex="0" required />
+        <button class="footer__button-news-letter" tabindex="0">Enviar</button>
+      </form>
+    </div>
+    <div class="footer__derecha wow fadeInRight">
+      <a href="https://facebook.com.ar" class="icon-facebook" target="_blank" tabindex="0" rel="noreferrer"><img
+          src="img/iconos/facebook.svg" alt="Facebook"></a>
+      <a href="https://twitter.com.ar" class="icon-twitter" target="_blank" tabindex="0" rel="noreferrer"><img
+          src="img/iconos/twitter.svg" alt="Twitter"></a>
+      <a href="https://instagram.com.ar" class="icon-instagram" target="_blank" target="_blank" tabindex="0"
+        rel="noreferrer"><img src="img/iconos/instagram.svg" alt="Instagram"></a>
+      <p tabindex="0">&copy; 2021 - Desarrollada por Damián Cabrio</p>
+    </div>
+  </footer>
+  <!-- Fin footer -->
+
+
+
+  <!-- Bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"
+    defer></script>
+
+  <!-- WOW js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script>
     new WOW().init();
   </script>
 
-</head>
-
-<body>
-  <!-- Inicio Navbar -->
-  <section id="nav-section">
-    <nav class="container navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="/" tabindex="0">Patagonic</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar la navegación">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="nav-elements collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav text-center ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/" tabindex="1">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="experiencia.html" tabindex="2">Experiencia</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="idea.html" tabindex="3">Generador de ideas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" tabindex="4">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contactanos.html" tabindex="5">Contáctanos</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </section>
-  <!-- Fin Navbar -->
-
-  <!-- Inicio Secciones Main -->
-  <main>
-    <!-- Inicio Hero -->
-    <section tabindex="6">
-      <div class="hero__imagen hero">
-        <div class="hero__texto wow fadeIn" data-wow-duration="1.5s">
-          <h1 tabindex="7">Enterate de lo ultimo</h1>
-          <h2 tabindex="8">Adelántate a los demás</h2>
-        </div>
-      </div>
-    </section>
-    <!-- Fin Hero -->
-
-    <!-- Inicio Sección blog -->
-    <section class="columna">
-      <div class="grid columna__tarjeta wow fadeInUp" tabindex="9">
-        <div class="grid__titulo">
-          <h2 tabindex="10">TITULO <span class="badge badge-pill bg-primary">Nuevo</span></h2>
-          <h5 tabindex="11">Descripción, Dec 7, 2020</h5>
-        </div>
-        <div class="grid__texto" tabindex="12">
-          <p>Texto..</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quam
-            quis numquam tenetur, iusto delectus commodi minus, cum illum
-            adipisci expedita, ratione fugit rem aliquam reiciendis. Ea quidem
-            deserunt asperiores. Dignissimos, distinctio illum quis molestiae
-            nobis itaque at eum nulla, tempore molestias illo provident
-            quibusdam quasi. Reprehenderit facilis asperiores, consectetur,
-            quasi necessitatibus a tempore laudantium harum iure, ipsum
-            laboriosam veritatis!.
-          </p>
-        </div>
-        <div class="grid__imagen">
-          <img src="/img/blog-placeholder.jpg" alt="placeholder" class="grid__imagen--img" tabindex="13" />
-        </div>
-      </div>
-      <div class="grid columna__tarjeta wow fadeInUp" tabindex="14">
-        <div class="grid__titulo">
-          <h2 tabindex="15">TITULO</h2>
-          <h5 tabindex="16">Descripción, Dec 7, 2020</h5>
-        </div>
-        <div class="grid__texto" tabindex="17">
-          <p>Texto..</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quam
-            quis numquam tenetur, iusto delectus commodi minus, cum illum
-            adipisci expedita, ratione fugit rem aliquam reiciendis. Ea quidem
-            deserunt asperiores. Dignissimos, distinctio illum quis molestiae
-            nobis itaque at eum nulla, tempore molestias illo provident
-            quibusdam quasi. Reprehenderit facilis asperiores, consectetur,
-            quasi necessitatibus a tempore laudantium harum iure, ipsum
-            laboriosam veritatis!.
-          </p>
-        </div>
-        <div class="grid__imagen">
-          <img src="/img/blog-placeholder.jpg" alt="placeholder" class="grid__imagen--img" tabindex="18" />
-        </div>
-      </div>
-      <div class="paginacion">
-        <a href="#" tabindex="19">&laquo;</a>
-        <a href="#" class="paginacion--activo" tabindex="20">1</a>
-        <a href="#" tabindex="21">2</a>
-        <a href="#" tabindex="22">3</a>
-        <a href="#" tabindex="23">4</a>
-        <a href="#" tabindex="24">5</a>
-        <a href="#" tabindex="25">6</a>
-        <a href="#" tabindex="26">&raquo;</a>
-      </div>
-    </section>
-    <!-- Fin Sección blog -->
-  </main>
-  <!-- Fin Secciones Main -->
-
-  <!-- Inicio footer -->
-  <footer class="footer" tabindex="27">
-    <div class="footer__derecha wow fadeInRight">
-      <a href="#" class="icon-facebook" tabindex="31"><i class="fa fa-facebook"></i></a>
-      <a href="#" class="icon-twitter" tabindex="32"><i class="fa fa-twitter"></i></a>
-      <a href="#" class="icon-instagram" tabindex="33"><i class="fa fa-instagram"></i></a>
-      <p tabindex="34">&copy; 2021 - Desarrollada por Damián Cabrio</p>
-    </div>
-    <div class="footer__izquierda wow fadeInLeft">
-      <p tabindex="28">Suscribite a nuestra newsletter</p>
-      <form action="#">
-        <input type="text" class="footer__news-letter-input" tabindex="29" />
-        <button class="footer__button-news-letter" tabindex="30">Enviar</button>
-      </form>
-    </div>
-  </footer>
-  <!-- Fin footer -->
 </body>
 
 </html>

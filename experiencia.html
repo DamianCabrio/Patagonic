@@ -30,282 +30,350 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 
-  <!-- normalize.css -->
-  <link href="https://unpkg.com/@csstools/normalize.css/evergreen.css" rel="stylesheet" />
-  <!-- font-awesome -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
-
-  <!-- wow.js y su dependencia animate.css -->
+  <!-- animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-    crossorigin="anonymous"></script>
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/style.min.css">
 
-  <!-- Estilos base -->
-  <link rel="stylesheet" href="css/base.min.css" />
-  <!-- Estilos index -->
-  <link rel="stylesheet" href="css/experiencia.min.css" />
+</head>
+
+<body>
+
+  <div id="page-container">
+    <!-- Inicio Navbar -->
+    <section id="nav-section">
+      <nav class="navbar fixed-top navbar-expand-lg bg-light navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="/" tabindex="0">Patagonic</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar la navegación">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="nav-elements collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav text-center ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/" tabindex="0">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" tabindex="0">Experiencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="idea.html" tabindex="0">Generador de ideas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html" tabindex="0">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactanos.html" tabindex="0">Contáctanos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- Fin Navbar -->
+
+    <!-- Inicio Scroll to top botón -->
+    <a href="#page-container">
+      <div class="top-btn">
+        <img src="img/iconos/caret-up-fill.svg" alt="Flecha hacia arriba">
+      </div>
+    </a>
+    <!-- Fin Scroll to top botón -->
+
+    <!-- Inicio Secciones Main -->
+    <main>
+      <!-- Inicio Hero -->
+      <section tabindex="0">
+        <div class="hero__imagen hero__imagen--experiencia hero">
+          <div class="hero__texto wow fadeIn" data-wow-duration="1.5s">
+            <h1 tabindex="0">Hemos trabajado mucho</h1>
+            <h2 tabindex="0">Vos podes ser el siguiente</h2>
+          </div>
+        </div>
+      </section>
+      <!-- Fin Hero -->
+
+      <!-- Inicio Nuestra experiencia -->
+      <section id="experiencia" class="experiencia wow fadeInUp" tabindex="0">
+        <h3 class="section__titulos" tabindex="0">Nuestra experiencia</h3>
+        <hr />
+        <table class="experiencia__tabla">
+          <thead>
+            <tr tabindex="0">
+              <th scope="col">Empresa</th>
+              <th scope="col">Año</th>
+              <th scope="col">Cant. Espectadores</th>
+              <th scope="col">Pagina del evento</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <td colspan="19">
+                <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#ver-mas" tabindex="0">
+                  Ver fotos
+                </button>
+              </td>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr tabindex="0">
+              <th scope="row">Patagonic Fest 2019</th>
+              <td data-title="Año">2019</td>
+              <td data-title="Espectadores">5000</td>
+              <td data-title="Pagina del evento"><a href="https://ejemplo.com.ar" rel="noreferrer"
+                  target="_blank">Ver</a></td>
+            </tr>
+            <tr tabindex="0">
+              <th scope="row">Seminario con Marvel</th>
+              <td data-title="Año">2018</td>
+              <td data-title="Espectadores">6000</td>
+              <td data-title="Pagina del evento"><a href="https://ejemplo.com.ar" rel="noreferrer"
+                  target="_blank">Ver</a></td>
+            </tr>
+            <tr tabindex="0">
+              <th scope="row">Seminario con Mcdonalds</th>
+              <td data-title="Año">2015</td>
+              <td data-title="Espectadores">4500</td>
+              <td data-title="Pagina del evento"><a href="https://ejemplo.com.ar" rel="noreferrer"
+                  target="_blank">Ver</a></td>
+            </tr>
+            <tr tabindex="0">
+              <th scope="row">Emprendedores Patagonicos</th>
+              <td data-title="Año">2017</td>
+              <td data-title="Espectadores">3600</td>
+              <td data-title="Pagina del evento"><a href="https://ejemplo.com.ar" rel="noreferrer"
+                  target="_blank">Ver</a></td>
+            </tr>
+            <tr tabindex="0">
+              <th scope="row">Conectate al mundo</th>
+              <td data-title="Año">2014</td>
+              <td data-title="Espectadores">4200</td>
+              <td data-title="Pagina del evento"><a href="https://ejemplo.com.ar" rel="noreferrer"
+                  target="_blank">Ver</a></td>
+            </tr>
+            <tr tabindex="0">
+              <th scope="row">Seminario con Netflix</th>
+              <td data-title="Año">2015</td>
+              <td data-title="Espectadores">2000</td>
+              <td data-title="Pagina del evento"><a href="https://ejemplo.com.ar" rel="noreferrer"
+                  target="_blank">Ver</a></td>
+            </tr>
+            <tr tabindex="0">
+              <th scope="row">Seminario con Disney</th>
+              <td data-title="Año">2015</td>
+              <td data-title="Espectadores">5500</td>
+              <td data-title="Pagina del evento"><a href="https://ejemplo.com.ar" rel="noreferrer"
+                  target="_blank">Ver</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <div class="modal fade" id="ver-mas" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Galería de trabajos</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="img-evento-1 d-block w-100"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img-evento-2 d-block w-100"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img-evento-3 d-block w-100"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="img-evento-4 d-block w-100"></div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fin Nuestra experiencia -->
+
+      <!-- Inicio Nuestro equipo -->
+      <section id="equipo" class="equipo wow fadeInUp" tabindex="0">
+        <h3 class="section__titulos" tabindex="0">El equipo</h3>
+        <hr />
+        <div class="equipo__contenedor row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <div class="img img-1">
+                <div class="redes">
+                  <a href="https://facebook.com.ar" rel="noreferrer" target="_blank" class="icon-facebook">
+                    <img src="img/iconos/facebook.svg" alt="Facebook">
+                  </a>
+                  <a href="https://twitter.com.ar" rel="noreferrer" target="_blank" class="icon-twitter">
+                    <img src="img/iconos/twitter.svg" alt="Twitter">
+                  </a>
+                  <a href="https://instagram.com.ar" rel="noreferrer" target="_blank" class="icon-instagram">
+                    <img src="img/iconos/instagram.svg" alt="Instagram">
+                  </a>
+                </div>
+              </div>
+              <div class="card-body" tabindex="0">
+                <h5 class="card-title">Pedro Lopez</h5>
+                <p class="card-text">CEO - 35 años de experiencia</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="img img-2">
+                <div class="redes">
+                  <a href="https://facebook.com.ar" rel="noreferrer" target="_blank" class="icon-facebook">
+                    <img src="img/iconos/facebook.svg" alt="Facebook">
+                  </a>
+                  <a href="https://twitter.com.ar" rel="noreferrer" target="_blank" class="icon-twitter">
+                    <img src="img/iconos/twitter.svg" alt="Twitter">
+                  </a>
+                  <a href="https://instagram.com.ar" rel="noreferrer" target="_blank" class="icon-instagram">
+                    <img src="img/iconos/instagram.svg" alt="Instagram">
+                  </a>
+                </div>
+              </div>
+              <div class="card-body" tabindex="0">
+                <h5 class="card-title">Lorenzo Manto</h5>
+                <p class="card-text">Senior Dev - 12 años de experiencia</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="img img-3">
+                <div class="redes">
+                  <a href="https://facebook.com.ar" rel="noreferrer" target="_blank" class="icon-facebook">
+                    <img src="img/iconos/facebook.svg" alt="Facebook">
+                  </a>
+                  <a href="https://twitter.com.ar" rel="noreferrer" target="_blank" class="icon-twitter">
+                    <img src="img/iconos/twitter.svg" alt="Twitter">
+                  </a>
+                  <a href="https://instagram.com.ar" rel="noreferrer" target="_blank" class="icon-instagram">
+                    <img src="img/iconos/instagram.svg" alt="Instagram">
+                  </a>
+                </div>
+              </div>
+              <div class="card-body" tabindex="0">
+                <h5 class="card-title">Gordon Freeman</h5>
+                <p class="card-text">Científico - 8 años de experiencia</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="img img-4">
+                <div class="redes">
+                  <a href="https://facebook.com.ar" rel="noreferrer" target="_blank" class="icon-facebook">
+                    <img src="img/iconos/facebook.svg" alt="Facebook">
+                  </a>
+                  <a href="https://twitter.com.ar" rel="noreferrer" target="_blank" class="icon-twitter">
+                    <img src="img/iconos/twitter.svg" alt="Twitter">
+                  </a>
+                  <a href="https://instagram.com.ar" rel="noreferrer" target="_blank" class="icon-instagram">
+                    <img src="img/iconos/instagram.svg" alt="Instagram">
+                  </a>
+                </div>
+              </div>
+              <div class="card-body" tabindex="0">
+                <h5 class="card-title">Julia Morato</h5>
+                <p class="card-text">Marketing - 15 años de experiencia</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="img img-5">
+                <div class="redes text-center">
+                  <a href="https://facebook.com.ar" rel="noreferrer" target="_blank" class="icon-facebook">
+                    <img src="img/iconos/facebook.svg" alt="Facebook">
+                  </a>
+                  <a href="https://twitter.com.ar" rel="noreferrer" target="_blank" class="icon-twitter">
+                    <img src="img/iconos/twitter.svg" alt="Twitter">
+                  </a>
+                  <a href="https://instagram.com.ar" rel="noreferrer" target="_blank" class="icon-instagram">
+                    <img src="img/iconos/instagram.svg" alt="Instagram">
+                  </a>
+                </div>
+              </div>
+              <div class="card-body" tabindex="0">
+                <h5 class="card-title">Florencia Calvo</h5>
+                <p class="card-text">Soporte - 5 años de experiencia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Fin Nuestro equipo -->
+    </main>
+    <!-- Fin Secciones Main -->
+  </div>
+
+  <!-- Inicio footer -->
+  <footer class="footer" tabindex="0">
+    <div class="footer__izquierda wow fadeInLeft">
+      <p tabindex="0">Suscribite a nuestra newsletter</p>
+      <form action="#">
+        <input type="text" class="footer__news-letter-input" tabindex="0" required />
+        <button class="footer__button-news-letter" tabindex="0">Enviar</button>
+      </form>
+    </div>
+    <div class="footer__derecha wow fadeInRight">
+      <a href="https://facebook.com.ar" class="icon-facebook" target="_blank" tabindex="0" rel="noreferrer">
+        <img src="img/iconos/facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://twitter.com.ar" class="icon-twitter" target="_blank" tabindex="0" rel="noreferrer"><img
+          src="img/iconos/twitter.svg" alt="Twitter"></a>
+      <a href="https://instagram.com.ar" class="icon-instagram" target="_blank" target="_blank" tabindex="0"
+        rel="noreferrer"><img src="img/iconos/instagram.svg" alt="Instagram"></a>
+      <p tabindex="0">&copy; 2021 - Desarrollada por Damián Cabrio</p>
+    </div>
+  </footer>
+  <!-- Fin footer -->
+
+  <!-- Bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"
+    defer></script>
+
+  <!-- WOW js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script>
     new WOW().init();
   </script>
 
-</head>
-
-<body>
-  <!-- Inicio Navbar -->
-  <section id="nav-section">
-    <nav class="container navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="/" tabindex="0">Patagonic</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar la navegación">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="nav-elements collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav text-center ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/" tabindex="1">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" tabindex="2">Experiencia</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="idea.html" tabindex="3">Generador de ideas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="blog.html" tabindex="4">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contactanos.html" tabindex="5">Contáctanos</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </section>
-  <!-- Fin Navbar -->
-
-  <!-- Inicio Secciones Main -->
-  <main>
-    <!-- Inicio Hero -->
-    <section tabindex="6">
-      <div class="hero__imagen hero">
-        <div class="hero__texto wow fadeIn" data-wow-duration="1.5s">
-          <h1 tabindex="7">Hemos trabajado mucho</h1>
-          <h2 tabindex="8">Vos podes ser el siguiente</h2>
-        </div>
-      </div>
-    </section>
-    <!-- Fin Hero -->
-
-    <!-- Inicio Nuestra experiencia -->
-    <section id="experiencia" class="experiencia wow fadeInUp" tabindex="9">
-      <h3 class="section__titulos" tabindex="10">Nuestra experiencia</h3>
-      <hr />
-      <table class="experiencia__tabla">
-        <thead>
-          <tr tabindex="11">
-            <th scope="col">Empresa</th>
-            <th scope="col">Año</th>
-            <th scope="col">Cant. Visitas</th>
-            <th scope="col">Visitar</th>
-          </tr>
-        </thead>
-        <tfoot>
-          <tr>
-            <td colspan="19">
-              <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#ver-mas" tabindex="16">
-                Ver mas
-              </button>
-            </td>
-          </tr>
-        </tfoot>
-        <tbody>
-          <tr tabindex="12">
-            <th scope="row">Disney</th>
-            <td data-title="Año">2015</td>
-            <td data-title="Visitas">12000</td>
-            <td data-title="Visitar"><a href="">Ver</a></td>
-          </tr>
-          <tr tabindex="13">
-            <th scope="row">Marvel</th>
-            <td data-title="Año">2019</td>
-            <td data-title="Visitas">120000</td>
-            <td data-title="Visitar"><a href="">Ver</a></td>
-          </tr>
-          <tr tabindex="14">
-            <th scope="row">Mcdonalds</th>
-            <td data-title="Año">2015</td>
-            <td data-title="Visitas">12000</td>
-            <td data-title="Visitar"><a href="">Ver</a></td>
-          </tr>
-          <tr tabindex="15">
-            <th scope="row">Sony</th>
-            <td data-title="Año">2015</td>
-            <td data-title="Visitas">12000</td>
-            <td data-title="Visitar"><a href="">Ver</a></td>
-          </tr>
-          <tr tabindex="16">
-            <th scope="row">Adidas</th>
-            <td data-title="Año">2015</td>
-            <td data-title="Visitas">12000</td>
-            <td data-title="Visitar"><a href="">Ver</a></td>
-          </tr>
-          <tr tabindex="17">
-            <th scope="row">Netflix</th>
-            <td data-title="Año">2015</td>
-            <td data-title="Visitas">12000</td>
-            <td data-title="Visitar"><a href="">Ver</a></td>
-          </tr>
-          <tr tabindex="18">
-            <th scope="row">Disney</th>
-            <td data-title="Año">2015</td>
-            <td data-title="Visitas">12000</td>
-            <td data-title="Visitar"><a href="">Ver</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <div class="modal fade" id="ver-mas" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-      aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Galería de trabajos</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="img-trabajo-1 d-block w-100"></div>
-                </div>
-                <div class="carousel-item">
-                  <div class="img-trabajo-2 d-block w-100"></div>
-                </div>
-                <div class="carousel-item">
-                  <div class="img-trabajo-3 d-block w-100"></div>
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-              </button>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Fin Nuestra experiencia -->
-
-    <!-- Inicio Nuestro equipo -->
-    <section id="equipo" class="equipo wow fadeInUp" tabindex="20">
-      <h3 class="section__titulos" tabindex="21">El equipo</h3>
-      <hr />
-      <div class="equipo__contenedor row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <div class="img img-1">
-              <div class="redes">
-                <i class="fa fa-facebook text-white icon-facebook"></i>
-                <i class="fa fa-twitter text-white icon-twitter"></i>
-                <i class="fa fa-instagram text-white icon-instagram"></i>
-              </div>
-            </div>
-            <div class="card-body" tabindex="22">
-              <h5 class="card-title">Pedro Lopez</h5>
-              <p class="card-text">CEO - 35 años de experiencia</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <div class="img img-2">
-              <div class="redes">
-                <i class="fa fa-facebook text-white icon-facebook"></i>
-                <i class="fa fa-twitter text-white icon-twitter"></i>
-                <i class="fa fa-instagram text-white icon-instagram"></i>
-              </div>
-            </div>
-            <div class="card-body" tabindex="23">
-              <h5 class="card-title">Lorenzo Manto</h5>
-              <p class="card-text">Senior Dev - 12 años de experiencia</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <div class="img img-3">
-              <div class="redes">
-                <i class="fa fa-facebook text-white icon-facebook"></i>
-                <i class="fa fa-twitter text-white icon-twitter"></i>
-                <i class="fa fa-instagram text-white icon-instagram"></i>
-              </div>
-            </div>
-            <div class="card-body" tabindex="24">
-              <h5 class="card-title">Gordon Freeman</h5>
-              <p class="card-text">Científico - 8 años de experiencia</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <div class="img img-4">
-              <div class="redes">
-                <i class="fa fa-facebook text-white icon-facebook"></i>
-                <i class="fa fa-twitter text-white icon-twitter"></i>
-                <i class="fa fa-instagram text-white icon-instagram"></i>
-              </div>
-            </div>
-            <div class="card-body" tabindex="25">
-              <h5 class="card-title">Julia Morato</h5>
-              <p class="card-text">Marketing - 15 años de experiencia</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Fin Nuestro equipo -->
-  </main>
-  <!-- Fin Secciones Main -->
-
-  <!-- Inicio footer -->
-  <footer class="footer" tabindex="26">
-    <div class="footer__derecha wow fadeInRight">
-      <a href="#" class="icon-facebook" tabindex="30"><i class="fa fa-facebook"></i></a>
-      <a href="#" class="icon-twitter" tabindex="31"><i class="fa fa-twitter"></i></a>
-      <a href="#" class="icon-instagram" tabindex="32"><i class="fa fa-instagram"></i></a>
-      <p tabindex="33">&copy; 2021 - Desarrollada por Damián Cabrio</p>
-    </div>
-    <div class="footer__izquierda wow fadeInLeft">
-      <p tabindex="27">Suscribite a nuestra newsletter</p>
-      <form action="#">
-        <input type="text" class="footer__news-letter-input" tabindex="28" />
-        <button class="footer__button-news-letter" tabindex="29">Enviar</button>
-      </form>
-    </div>
-  </footer>
-  <!-- Fin footer -->
 </body>
 
 </html>
