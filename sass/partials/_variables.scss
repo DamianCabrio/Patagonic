@@ -4,6 +4,13 @@ $color-green-hover: #45a049;
 $color-blue: #367dcf;
 $color-blue-hover: #1d4d85;
 
+$color-fondo-main: #f4f4f4;
+$color-fondo-footer: #292c2f;
+$color-fondo-footer-redes: #33383b;
+
+$color-negro: #000;
+$color-blanco: #fff;
+
 /* Colores redes sociales */
 $redes-sociales: (
   "facebook": #3b5998,
@@ -15,5 +22,5 @@ $redes-sociales: (
 $margin-superior-titulo: 10;
 
 /* Define la cantidad de imágenes de trabajos y equipo en experiencia.scss */
-$cantidad-img-equipo: 4;
-$cantidad-img-trabajos: 3;
+$cantidad-img-equipo: 5;
+$cantidad-img-eventos: 4;

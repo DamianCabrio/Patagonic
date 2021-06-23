@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap");
-@import "partials/variables";
-@import "partials/mixins";
 
 /* Estilos generales inicio */
 /* Le dan al body y html el 100% del alto disponible */
@@ -13,12 +11,25 @@ html {
 body {
   margin: 0;
   font-family: "Arimo", sans-serif;
-  background-color: #f4f4f4;
+  background-color: $color-fondo-main;
 }
 
 /* Le pone color negro a los links */
 a {
-  color: #000;
+  color: $color-negro;
+}
+
+.sombra,
+.navbar {
+  filter: drop-shadow(0.35rem 0.1rem 0.5rem rgba(0, 0, 0, 0.5));
+}
+
+.bordes-redondeados {
+  border-radius: 10px;
+}
+
+#page-container {
+  min-height: 100vh;
 }
 
 /* Estilos generales fin */
@@ -109,14 +120,18 @@ a {
 
 /* Estilos general del footer */
 .footer {
-  background-color: #292c2f;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  background-color: $color-fondo-footer;
+  box-shadow: 0 1px 1px 0 rgba($color-negro, 0.12);
   box-sizing: border-box;
   width: 100%;
   text-align: left;
   font: normal 16px;
   padding: 45px 50px;
+  padding-bottom: 20px;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
 
   /* Estilos para el input de newsletter */
   &__news-letter-input {
@@ -124,7 +139,7 @@ a {
     -moz-border-radius: 20px;
     border-radius: 20px;
     border: 1px solid $color-blue;
-    color: #a0d18c;
+    color: $color-green-hover;
     width: 200px;
     height: 30px;
     padding-left: 10px;
@@ -134,7 +149,7 @@ a {
     /* Estilos para el input de newsletter al hacer click */
     &:focus {
       outline: none;
-      border: 1px solid #a0d18c;
+      border: 1px solid $color-green-hover;
       color: $color-blue;
     }
   }
@@ -148,7 +163,7 @@ a {
     border-radius: 18px;
     background-color: $color-blue;
     border: solid 1px transparent;
-    color: #fff;
+    color: $color-blanco;
     font-size: 18px;
     font-weight: 300;
     cursor: pointer;
@@ -157,7 +172,7 @@ a {
     /* Estilos para el botón de suscribirse a newsletter cuando se le pone el mouse arriba */
     &:hover {
       background-color: transparent;
-      border-color: #fff;
+      border-color: $color-blanco;
       transition: all 0.3s ease-in-out;
     }
   }
@@ -166,49 +181,96 @@ a {
   &__izquierda p {
     font-size: 22px;
     margin: 0;
-  }
-}
-
-/* Flota los links a las redes a la derecha */
-.footer__derecha {
-  float: right;
-  margin-top: 6px;
-  max-width: 180px;
-
-  /* Estilos para los links a redes sociales */
-  & a {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    background-color: #33383b;
-    border-radius: 2px;
-    font-size: 20px;
-    color: #ffffff;
     text-align: center;
-    line-height: 35px;
-    margin-left: 3px;
-    transition: all 0.25s;
   }
 
-  /* Efecto al hacer hover sobre los links a redes sociales */
-  & a:hover {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-  }
+  /* Flota los links a las redes a la derecha */
+  .footer__derecha {
+    margin-top: 6px;
+    max-width: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-  @include hover-redes();
+    /* Estilos para los links a redes sociales */
+    & a {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      background-color: $color-fondo-footer-redes;
+      border-radius: 2px;
+      font-size: 20px;
+      color: $color-blanco;
+      line-height: 35px;
+      transition: all 0.25s;
+
+      text-align: center;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    & p {
+      text-align: center;
+    }
+
+    /* Efecto al hacer hover sobre los links a redes sociales */
+    & a:hover {
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+    }
+
+    @include hover-redes();
+  }
 }
 
 /* Permite que el footer sea responsive, posiciona los dos elementos del footer de forma vertical */
-@media (max-width: 48em) {
+@media (max-width: 36.875em) {
   .footer__izquierda,
   .footer__derecha {
-    text-align: center;
-  }
-  .footer__derecha {
-    float: none;
-    margin: 0 auto 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 /* Estilos footer fin */
+
+/* Estilos botón scroll to top */
+.top-btn {
+  width: 50px;
+  height: 50px;
+  background: $color-green;
+  color: $color-blanco;
+  text-align: center;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 50px;
+  z-index: 999;
+  transition: 0.5s;
+
+  & img {
+    width: 50%;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    background: $color-negro;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+
+  &:hover::before {
+    height: 100%;
+  }
+}
+/* Fin estilos botón scroll to top */

@@ -1,9 +1,12 @@
 /* Estilos Hero inicio */
 
 /* Foto para el hero */
-.hero__imagen {
+.hero__imagen--blog {
   /* Agrega la imagen de fondo con una gradiente por encima para que se oscurezca un poco la foto */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(
+      rgba($color-negro, 0.5),
+      rgba($color-negro, 0.5)
+    ),
     url("../img/blog.jpg");
 }
 
@@ -17,7 +20,7 @@
 
   /* Agrega estilo de tarjeta para cada entrada */
   &__tarjeta {
-    background-color: white;
+    background-color: $color-blanco;
     padding: 20px;
     margin-top: 20px;
     width: 100%;
@@ -78,7 +81,7 @@
   margin-bottom: 10px;
 
   & a {
-    color: black;
+    color: $color-negro;
     float: left;
     padding: 8px 16px;
     margin-bottom: 40px;
@@ -86,12 +89,12 @@
     transition: background-color 0.3s;
 
     &.paginacion--activo {
-      background-color: #4caf50;
-      color: white;
+      background-color: $color-green;
+      color: $color-blanco;
     }
 
     &:hover:not(.paginacion--activo) {
-      background-color: #ddd;
+      background-color: $color-green-hover;
     }
   }
 }

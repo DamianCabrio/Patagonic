@@ -1,11 +1,12 @@
-@import "partials/variables";
-
 /* Estilos Hero inicio */
 
 /* Estilos para la sección Hero */
-.hero__imagen {
+.hero__imagen--contactanos {
   /* Agrega la imagen de fondo con una gradiente por encima para que se oscurezca un poco la foto */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(
+      rgba($color-negro, 0.5),
+      rgba($color-negro, 0.5)
+    ),
     url("../img/contacto.jpg");
 }
 

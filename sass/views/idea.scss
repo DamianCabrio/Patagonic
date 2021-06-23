@@ -1,17 +1,24 @@
-@import "partials/variables";
-
 /* Estilos Hero inicio */
 
 /* Estilos para la sección Hero */
-.hero__imagen {
+.hero__imagen--idea {
   /* Agrega la imagen de fondo con una gradiente por encima para que se oscurezca un poco la foto */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(
+      rgba($color-negro, 0.5),
+      rgba($color-negro, 0.5)
+    ),
     url("../img/idea.jpg");
 }
 /* Estilos Hero Fin */
 
+.section {
+  &--idea {
+    margin-top: 60px;
+  }
+}
+
 /* Estilos del contenedor del las secciones */
-.section__contenedor {
+.section__contenedor--idea {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -26,25 +33,24 @@
 
 /* Estilos del contenedor del las secciones */
 .section__generador {
-  margin-bottom: 45px;
+  margin-bottom: 5px;
   margin-top: 15px;
   display: flex;
   flex-direction: column;
   align-items: flex-middle;
 
   /* Estilos para el texto de las ideas generadas al azar */
-  &--texto {
-    border-bottom: 1px dashed black;
+  & &--texto {
+    border-bottom: 1px dashed $color-negro;
     margin-right: 5px;
     display: inline-block;
-    width: 300px;
     text-align: center;
   }
 }
 
 /* Estilo base para el botón de generar */
 .section__boton {
-  color: white;
+  color: $color-blanco;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;

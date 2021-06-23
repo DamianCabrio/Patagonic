@@ -1,9 +1,12 @@
 /* Estilos Hero inicio */
 
 /* Estilos para la sección Hero */
-.hero__imagen {
+.hero__imagen--index {
   /* Agrega la imagen de fondo con una gradiente por encima para que se oscurezca un poco la foto */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(
+      rgba($color-negro, 0.5),
+      rgba($color-negro, 0.5)
+    ),
     url("../img/bg-hero.jpg");
 }
 
@@ -57,9 +60,8 @@
 .seccion__descripcion-img {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba($color-negro, 0.2);
   z-index: 1;
 
   &--texto {
