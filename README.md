@@ -44,4 +44,7 @@ Por último al subir el sitio al servidor, se utilizó el archivo .htaccess para
 ## Presupuesto
 EL presupuesto se realizo pensando en Patagonic como una empresa grande y con trajectoria. Link: https://bit.ly/3zQ218d
 
+## Rama Bootstrap
+Esta rama contiene un prototipo del index hecho totalmente con Bootstrap, luego se decidió rehacer la estructura de 0 con puro CSS.
+
 ##### Damián Andrés Cabrio 2021
