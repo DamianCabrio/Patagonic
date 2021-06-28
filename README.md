@@ -38,7 +38,7 @@ Cada página del sitio tiene un archivo CSS propio, style.css, que se compila ut
 Se compró un dominio .site por el sitio Hostinger, por 80 pesos (ya que tenía descuento), y se utilizó este mismo hosting para subir la página. El sitio puede ser accedido por el siguiente link: https://patagonic.site/.
 
 En cuanto a SEO cada página tiene en su header los meta tags keywords, description y author, además tienen un título de página descriptivo, favicon con variedades para accesos directos en Android e iPhone y tags open graph, para permitir una previsualización al enviar el link del sitio por plataformas como WhatsApp.\
-Además se generó un sitemap del sitio, y este fue enviado a las consolas para webmasters de Google y Bing, además se especificó su dirección en el archivo robots.txt, las imágenes fueron optimizadas para la web y se agregó el atributo tabindex a los elementos más importantes del sitio, para permitir la navegación del sitio con el tab.\
+Además se generó un sitemap del sitio, y este fue enviado a las consolas para webmasters de Google y Bing (se especificó su dirección en el archivo robots.txt), las imágenes fueron optimizadas para la web (con lazy loading), se agregó el atributo tabindex a los elementos más importantes del sitio, para permitir la navegación del sitio con el tab y se incluye Google Analytics.\
 Por último al subir el sitio al servidor, se utilizó el archivo .htaccess para quitar la extensión .html del final de las URLs, y si se intenta ingresar un link con terminación .html, se redireccionara a la versión sin esta extensión.
 
 ## Presupuesto
